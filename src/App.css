@@ -1,0 +1,307 @@
+@import 'https://www.w3schools.com/w3css/4/w3.css';
+
+html {
+  background-color: #f1f1f1;
+}
+
+body, h1,h2,h3,h4,h5,h6,li {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+hr {
+  border: 1px solid #282c34;
+}
+
+p {
+  color: #282c34;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  background-color: rgba(140, 255, 251, 0.75);
+}
+
+footer p {
+  color: #818181;
+}
+
+#all-img {
+  padding-top: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Primary Fruits (buttons) */
+.fruits {
+  background-color: rgba(140, 255, 251, 0.75);
+  border: none;
+  opacity: 0.85;
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.fruits:hover {
+  border: 1px solid black;
+}
+
+#dots-content {
+  align-content: center;
+  margin-top: 17%;
+  position: fixed;
+}
+
+#trunk-content {
+  align-content: center;
+  margin-top: 54%;
+  position: fixed;
+}
+
+#hidden-content {
+  position: relative;
+}
+
+#avatar-fruit {
+  position: fixed;
+  margin-top: -3%;
+  margin-left: 1%;
+}
+
+#projects-fruit {
+  position: fixed;
+  margin-left: -22%;
+  margin-top: 7%;
+}
+
+#skills-fruit {
+  position: fixed;
+  margin-left: 15%;
+  margin-top: 11%;
+}
+
+#about-me {
+  width: 17%;
+  margin-top: 5%;
+  margin-left: -4%;
+  background-color: rgba(240, 182, 232, 0.95);
+  padding: 1.5em;
+  border-radius: 25%;
+  position: fixed;
+  z-index: 1;
+}
+
+#avatar {
+  background-image: url(images/avatar.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+
+#projects {
+  background-image: url(images/projects.png);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+}
+
+#skills {
+  background-image: url(images/skills.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+
+#projects-fruit, #skills-fruit, #avatar-fruit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fruits-caption {
+  color: black;
+  padding: 5px 0;
+}
+
+/* NavBar */
+#navbar {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  padding: 1em;
+}
+
+#home_icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* Projects buttons */
+.projects-button {
+  background-color: rgba(138, 138, 138, 0.75);
+  border: none;
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0.85;
+  display: inline-block;
+  cursor: pointer;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+
+  .projects-button:hover {
+      text-decoration: none;
+      opacity: 0.5;
+  }
+
+#project-fruits {
+  position: fixed;
+  z-index: 1;
+  margin-left: -30%;
+}
+
+#plantpedia-fruit {
+  margin-left: 150%;
+}
+
+#ivy-fruit {
+  margin-top: -25%;
+  margin-left: 22%;
+}
+
+#carpool-fruit {
+  margin-top: 35%;
+  margin-left: 60%;
+}
+
+#plantpedia {
+  background-image: url(images/plant.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+
+#ivy {
+  background-image: url(images/ivy.png);
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+}
+
+#ccarpool {
+  background-image: url(images/carpool.png);
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+}
+
+/* Skills buttons */
+.skills-button {
+  background-color: rgba(122, 228, 178, 0.75);
+  border: none;
+  color: rgba(88, 88, 88, 0.9);
+  opacity: 0.85;
+  display: inline-block;
+  cursor: default;
+  border-radius: 50%;
+}
+
+#skill-fruits {
+  margin-left: 20%;
+  margin-top: 2%;
+  position: fixed;
+  z-index: 1;
+}
+
+#second-fruits {
+  margin-top: -255%;
+  margin-left: 100%;
+}
+
+#third-fruits {
+  margin-top: -115%;
+  margin-left: 150%;
+}
+
+#btn-java {
+  margin-left: 4em;
+}
+
+.skills-three {
+  margin-top: 2em;
+  width: 85px;
+  height: 85px;
+}
+
+.skills-two {
+  margin-top: 6em;
+  height: 80px;
+  width: 80px;
+}
+
+.skills-one {
+  height: 75px;
+  width: 75px;
+}
+
+
+/* Project Pages */
+#image-area {
+  text-align: center;
+  margin-top: 2em;
+  width: 100%;
+}
+
+#img-plantpedia {
+  width: 150px;
+  height: 150px;
+}
+
+#img-ivy {
+  width: 250px;
+  height: 150px;
+}
+
+#img-cs {
+  text-align: center;
+}
+
+#main {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 6em;
+}
+
+.back-square {
+  background-color: #cecccc;
+  padding: 2.5em;
+}
+
+.back-square-lighter {
+  background-color: #e4e4e4;
+  padding: 2.5em;
+}
+
+.back-square p, .back-square-lighter p {
+  font-size: 1.3em;
+}
+
+.project-headings {
+  color: rgb(1, 102, 1);
+}
+
+
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+  #main {
+      margin-left: 0
+  }
+}
