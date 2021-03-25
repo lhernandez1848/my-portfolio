@@ -56,10 +56,10 @@ class HomePage extends React.Component {
 
                 <div id="hidden-content">
                     <div>{showHideProjectFruits 
-                        && <div>
-                            <FruitsExp idName="project-fruits" fDivId="plantpedia-fruit" fadeDelay={500}
+                        && <div id="project-fruits">
+                            <FruitsExp fDivId="plantpedia-fruit" fadeDelay={500}
                             linkId="plantpedia" linkName="/plantpedia" linkClassName="projects-button"/>
-                            <FruitsExp idName="project-fruits" fDivId="ivy-fruit" fadeDelay={1000}
+                            <FruitsExp fDivId="ivy-fruit" fadeDelay={500}
                             linkId="ivy" linkName="/ivy" linkClassName="projects-button"/>
                         </div>}
                     </div>
