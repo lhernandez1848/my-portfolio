@@ -2,15 +2,14 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import tech_tree from '../images/tech_tree.png';
 import dots from '../images/dots.png';
-import ProjectFruits from '../ProjectFruits';
-import SkillFruits from '../SkillFruits';
-import AboutMe from '../AboutMe';
+import Fruits from '../components/Fruits';
+import FruitsExp from '../components/FruitsExp';
 
 class HomePage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: "Fruits",
+            name: "FruitsExp",
             showHideProjectFruits: false,
             showHideSkillFruits: false,
             showHideAboutMe: false
@@ -45,28 +44,46 @@ class HomePage extends React.Component {
                 </div>
 
                 <div>
-                    <Fade delay={2400}>
-                        <div id="avatar-fruit">
-                            <button id="avatar" class="fruits" onClick={() => this.hideComponent("aboutMe")}></button>
-                            <span class="fruits-caption">About Me</span>
-                        </div>
-                        <div id="projects-fruit">
-                            <button id="projects" class="fruits" onClick={() => this.hideComponent("projectFruits")}></button>
-                            <span class="fruits-caption">Projects</span>
-                        </div>
-                        <div id="skills-fruit">
-                            <button id="skills" class="fruits" onClick={() => this.hideComponent("skillFruits")}></button>
-                            <span class="fruits-caption">Skills</span>
-                        </div>
-                    </Fade>
+                    <Fruits idName="avatar-fruit" fruitsBtnId="avatar" fruitsCaption="About Me"
+                    fruitsClickFunction={() => this.hideComponent("aboutMe")}></Fruits>
+
+                    <Fruits idName="projects-fruit" fruitsBtnId="projects" fruitsCaption="Projects"
+                    fruitsClickFunction={() => this.hideComponent("projectFruits")}></Fruits>
+
+                    <Fruits idName="skills-fruit" fruitsBtnId="skills" fruitsCaption="Skills"
+                    fruitsClickFunction={() => this.hideComponent("skillFruits")}></Fruits>
                 </div>
 
                 <div id="hidden-content">
-                    <div>{showHideProjectFruits && <ProjectFruits/>}</div>
+                    <div>{showHideProjectFruits 
+                        && <div>
+                            <FruitsExp idName="project-fruits" fDivId="plantpedia-fruit" fadeDelay={500}
+                            linkId="plantpedia" linkName="/plantpedia" linkClassName="projects-button"/>
+                            <FruitsExp idName="project-fruits" fDivId="ivy-fruit" fadeDelay={1000}
+                            linkId="ivy" linkName="/ivy" linkClassName="projects-button"/>
+                        </div>}
+                    </div>
                     
-                    <div>{showHideSkillFruits && <SkillFruits/>}</div>
+                    <div>{showHideSkillFruits 
+                        && <div id="skill-fruits">
+                        <FruitsExp idName="first-fruits" fadeDelay={500} btnText="HTML" 
+                        linkClassName="skills-button skills-three"/>
+                        <FruitsExp idName="first-fruits" fadeDelay={500} btnText="CSS"
+                        linkId="btn-css" linkClassName="skills-button skills-three"/>
+                        <FruitsExp idName="first-fruits" fadeDelay={500} btnText="JS"
+                        linkClassName="skills-button skills-three"/>
 
-                    <div>{showHideAboutMe && <AboutMe/>}</div>
+                        <FruitsExp idName="second-fruits" fadeDelay={1000} btnText="C#"
+                        linkClassName="skills-button skills-two"/>
+                        <FruitsExp idName="second-fruits" fadeDelay={1000} btnText="Java"
+                        linkClassName="skills-button skills-two"/>
+                    </div>}
+                    
+                    </div>
+
+                    <div>{showHideAboutMe && <FruitsExp idName="about-me" 
+                    aboutPar="Conestoga College graduate of Computer Programmer/Analyst,
+                    looking to apply my skills, passion, and inquisitiveness to a future role"/>}</div>
                 </div>
 
                 <div id="trunk-content">

@@ -40,7 +40,7 @@ footer p {
 
 /* Primary Fruits (buttons) */
 .fruits {
-  background-color: rgba(140, 255, 251, 0.75);
+  background-color: rgba(60, 236, 231, 0.75);
   border: none;
   opacity: 0.85;
   cursor: pointer;
@@ -89,11 +89,11 @@ footer p {
 
 #about-me {
   width: 17%;
-  margin-top: 5%;
-  margin-left: -4%;
-  background-color: rgba(240, 182, 232, 0.95);
+  margin-top: 4%;
+  margin-left: -8%;
+  background-color: rgb(241, 166, 219);
+  border-radius: 15%;
   padding: 1.5em;
-  border-radius: 25%;
   position: fixed;
   z-index: 1;
 }
@@ -146,7 +146,7 @@ footer p {
 
 /* Projects buttons */
 .projects-button {
-  background-color: rgba(138, 138, 138, 0.75);
+  background-color: rgb(85, 85, 85);
   border: none;
   color: rgba(255, 255, 255, 0.9);
   opacity: 0.85;
@@ -169,17 +169,13 @@ footer p {
 }
 
 #plantpedia-fruit {
-  margin-left: 150%;
+  margin-left: 30%;
+  margin-top: 25%;
 }
 
 #ivy-fruit {
-  margin-top: -25%;
-  margin-left: 22%;
-}
-
-#carpool-fruit {
-  margin-top: 35%;
-  margin-left: 60%;
+  margin-top: 225%;
+  margin-left: 30%;
 }
 
 #plantpedia {
@@ -196,18 +192,11 @@ footer p {
   background-position: center;
 }
 
-#ccarpool {
-  background-image: url(images/carpool.png);
-  background-repeat: no-repeat;
-  background-size: 75%;
-  background-position: center;
-}
-
 /* Skills buttons */
 .skills-button {
-  background-color: rgba(122, 228, 178, 0.75);
+  background-color: rgb(31, 31, 31);
   border: none;
-  color: rgba(88, 88, 88, 0.9);
+  color: #f1f1f1;
   opacity: 0.85;
   display: inline-block;
   cursor: default;
@@ -221,17 +210,7 @@ footer p {
   z-index: 1;
 }
 
-#second-fruits {
-  margin-top: -255%;
-  margin-left: 100%;
-}
-
-#third-fruits {
-  margin-top: -115%;
-  margin-left: 150%;
-}
-
-#btn-java {
+#btn-css {
   margin-left: 4em;
 }
 
@@ -239,19 +218,22 @@ footer p {
   margin-top: 2em;
   width: 85px;
   height: 85px;
+  text-decoration: none;
+  text-align: center;
+  padding: 2em 1.5em;
 }
 
 .skills-two {
-  margin-top: 6em;
+  top: -20em;
+  position: relative;
+  margin-bottom: 3em;
+  margin-left: 11em;
   height: 80px;
   width: 80px;
+  text-decoration: none;
+  text-align: center;
+  padding: 2em 1.5em;
 }
-
-.skills-one {
-  height: 75px;
-  width: 75px;
-}
-
 
 /* Project Pages */
 #image-area {
@@ -300,8 +282,16 @@ footer p {
 
 
 /* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   #main {
       margin-left: 0
+  }
+   
+  #tree-trunk {
+    display: none;
+  }
+
+  #dots-content {
+    transform: scaleY(-1);
   }
 }
