@@ -16,7 +16,6 @@ class ProjectFruits extends React.Component {
                 <Fade delay={this.props.fadeDelay}>
                     <div id={this.props.fDivId}>
                         <Link to={this.props.linkName} id={this.props.linkId} className={this.props.linkClassName}>{this.props.btnText}</Link>
-                        <p>{this.props.aboutPar}</p>
                     </div>
                 </Fade>
             </div>

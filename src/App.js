@@ -4,19 +4,16 @@ import {
    Route, 
    Switch,
   } from 'react-router-dom';
-import ScrollTop from 'react-scrolltop-button';
 import HomePage from './pages/HomePage';
 import PlantpediaProject from './pages/PlantpediaProject';
 import IVYProject from './pages/IVYProject';
 import './App.css';
 import NotFound from './pages/NotFound';
-import ScrollToTop from './ScrollToTop';
 import NavBar from './NavBar';
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop/>      
+    <Router>    
       <div className="App">
         <NavBar/>
         <div id="page-body">
@@ -27,14 +24,6 @@ function App() {
             <Route component={NotFound} />
           </Switch>
         </div>
-        <ScrollTop
-          text="Top"
-          distance={100}
-          breakpoint={768}
-          style={{ backgroundColor: "rgba(138, 138, 138, 0.55)" }}
-          speed={500}
-          target={75}
-        />
       </div>
     </Router>
   );

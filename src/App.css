@@ -14,8 +14,40 @@ hr {
 
 p {
   color: #282c34;
-  font-size: 1.1em;
+  font-size: 1.08em;
   line-height: 1.5;
+}
+
+#btn-about {
+  position: fixed;
+  background-color: #f1f1f1;
+  border: none;
+  position: fixed;
+  right: 1%;
+  top: 1%;
+  color: #282c34;
+  cursor: pointer;
+}
+
+#about-me-exp {
+  width: 450px;
+  height: 300px;
+  border-radius: 15%;
+  border: 5px solid rgb(60, 236, 231);
+  background-color: #f1f1f1;
+  position: relative;
+  top: -18em;
+}
+
+#about-me-exp img {
+  width: 150px;
+  height: 150px;
+  margin: 4em 1em;
+  float: left;
+}
+
+#about-me-exp p {
+  margin: 5em 1em;
 }
 
 footer {
@@ -34,19 +66,18 @@ footer p {
   padding-top: 4em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 /* Primary Fruits (buttons) */
 .fruits {
-  background-color: rgba(60, 236, 231, 0.75);
+  background-color: rgb(60, 236, 231);
   border: none;
-  opacity: 0.85;
   cursor: pointer;
   height: 100px;
   width: 100px;
   border-radius: 50%;
+  z-index: 1;
 }
 
 .fruits:hover {
@@ -54,55 +85,27 @@ footer p {
 }
 
 #dots-content {
-  align-content: center;
-  margin-top: 17%;
+  top: 10%;
   position: fixed;
+  z-index: -1;
 }
 
 #trunk-content {
-  align-content: center;
-  margin-top: 54%;
+  top: 35%;
   position: fixed;
-}
-
-#hidden-content {
-  position: relative;
-}
-
-#avatar-fruit {
-  position: fixed;
-  margin-top: -3%;
-  margin-left: 1%;
+  z-index: -1;
 }
 
 #projects-fruit {
-  position: fixed;
-  margin-left: -22%;
-  margin-top: 7%;
+  position: relative;
+  right: 20em;
+  top: 10em;
 }
 
 #skills-fruit {
-  position: fixed;
-  margin-left: 15%;
-  margin-top: 11%;
-}
-
-#about-me {
-  width: 17%;
-  margin-top: 4%;
-  margin-left: -8%;
-  background-color: rgb(241, 166, 219);
-  border-radius: 15%;
-  padding: 1.5em;
-  position: fixed;
-  z-index: 1;
-}
-
-#avatar {
-  background-image: url(images/avatar.png);
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: center;
+  position: relative;
+  left: 19em;
+  top: 5em;
 }
 
 #projects {
@@ -119,7 +122,7 @@ footer p {
   background-position: center;
 }
 
-#projects-fruit, #skills-fruit, #avatar-fruit {
+#projects-fruit, #skills-fruit {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,8 +151,7 @@ footer p {
 .projects-button {
   background-color: rgb(85, 85, 85);
   border: none;
-  color: rgba(255, 255, 255, 0.9);
-  opacity: 0.85;
+  color: rgb(255, 255, 255);
   display: inline-block;
   cursor: pointer;
   height: 90px;
@@ -163,17 +165,19 @@ footer p {
   }
 
 #project-fruits {
-  position: fixed;
   z-index: 1;
-  margin-left: -30%;
 }
 
 #plantpedia-fruit {
-  margin-top: 15%;
+  position: relative;
+  right: 27em;
+  top: -13em;
 }
 
 #ivy-fruit {
-  margin-top: 100%;
+  position: relative;
+  right: 27em;
+  top: -8em;
 }
 
 #plantpedia {
@@ -196,44 +200,49 @@ footer p {
   border: none;
   color: #f1f1f1;
   opacity: 0.85;
-  display: inline-block;
   cursor: default;
   border-radius: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  z-index: -1;
+  padding: 2em 0.5em;
 }
 
 #skill-fruits {
-  margin-left: 20%;
-  margin-top: 2%;
-  position: fixed;
-  z-index: 1;
+  position: relative;
+  left: 24em;
+  top: -11em;
+  align-items: center;
+  justify-content: center;
 }
 
-#btn-css {
-  margin-left: 4em;
+#btn-js {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  left: 3em;
 }
 
 .skills-three {
-  margin-top: 2em;
+  position: relative;
+  left: -5em;
   width: 85px;
   height: 85px;
-  text-decoration: none;
-  text-align: center;
-  padding: 2em 1.5em;
+  margin: -2em 0;
 }
 
 .skills-two {
-  top: -20em;
-  position: relative;
-  margin-bottom: 3em;
-  margin-left: 11em;
   height: 80px;
   width: 80px;
-  text-decoration: none;
-  text-align: center;
-  padding: 2em 1.5em;
-}
+} 
+
 
 /* Project Pages */
+.textDivs {
+  margin: 0 15em;
+}
+
 #image-area {
   text-align: center;
   margin-top: 2em;
@@ -241,7 +250,7 @@ footer p {
 }
 
 #img-plantpedia {
-  width: 150px;
+  width: 140px;
   height: 150px;
 }
 
@@ -250,46 +259,192 @@ footer p {
   height: 150px;
 }
 
-#img-cs {
+.imgsDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin: 1em;
+}
+
+.pImgsPl {
+  width: 220px;
+  height: 400px;
+  margin-right: 2em;
+}
+
+.pImgsIvy {
+  width: 220px;
+  height: 300px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.img-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.pImgsTextIvy, .pImgsTextPl {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   text-align: center;
+  font-size: 0.8em;
+  margin: 0 auto;
+  height: auto;
 }
 
-#main {
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-bottom: 6em;
+.pImgsTextIvy {
+  width: 211px;
+  padding: 0 1em;
+  top: -14em;
+  left: 36%;
+  background: #FEDEEF;
 }
 
-.back-square {
-  background-color: #cecccc;
-  padding: 2.5em;
+.pImgsTextPl {
+  width: 220px;
+  left: 28.4%;
+  top: -20em;
+  background: #FEDEEF;
 }
 
-.back-square-lighter {
-  background-color: #e4e4e4;
-  padding: 2.5em;
+.imgsDiv:hover .pImgsIvy, .imgsDiv:hover .pImgsPl {
+  opacity: 0.5;
 }
 
-.back-square p, .back-square-lighter p {
-  font-size: 1.3em;
-}
-
-.project-headings {
-  color: rgb(1, 102, 1);
+.imgsDiv:hover .pImgsTextIvy, .imgsDiv:hover .pImgsTextPl {
+  opacity: 1;
 }
 
 
 /* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 700px) {
-  #main {
-      margin-left: 0
-  }
-   
-  #tree-trunk {
-    display: none;
+@media only screen and (max-width: 850px) {  
+  .fruits {
+    position: relative;
+    z-index: -1;
+    width: 150px;
+    height: 150px;
   }
 
-  #dots-content {
-    transform: scaleY(-1);
+  #fruits-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #projects, #skills {
+    position: absolute;
+  }
+
+  #projects {
+    background-size: 80%;
+  }
+  
+  #skills {
+    background-size: 60%;
+  }
+
+  .fruits-caption {
+    position: relative;
+    top: 3.5em;
+  }
+
+  #projects-fruit {
+    position: relative;
+    right: unset;
+    top: 5em;
+  }
+  
+  #skills-fruit {
+    position: relative;
+    left: unset;
+    top: 22em;
+  }
+
+  #project-fruits {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #plantpedia-fruit {
+    right: unset;
+    top: 7em;
+    margin-right: 1em;
+  }
+  
+  #ivy-fruit {
+    right: unset;
+    top: 7em;
+    margin-left: 1em;
+  }
+
+  #plantpedia, #ivy {
+    background-color: #006866;
+  }  
+
+  /* Skills buttons */
+  .skills-button {
+    display: inline-block;
+    opacity: 1;
+    z-index: 0;
+    background-color: #006866;
+  }
+
+  #skill-fruits {
+    position: relative;
+    left: -1.5em;
+    top: 20em;
+  }
+
+  #btn-js {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    left: 0;
+    top: 7em;
+  }
+
+  .skills-three {
+    left: 0;
+    width: 85px;
+    height: 85px;
+    margin: 0 -1em;
+  }
+
+  .skills-two {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    top: 4em;
+  } 
+
+  #about-me-exp {
+    top: 2em;
+  }
+
+  /* Project Pages */
+  .imgsDiv {
+    margin-bottom: -4em;
+  }
+
+  .img-row {
+    flex-direction: column;
+  }
+
+  .textDivs {
+    margin: 0 3em;
   }
 }
