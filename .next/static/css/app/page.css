@@ -1,0 +1,269 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/components.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.components_fruit__XkrR_ {
+  border-radius: 100%;
+  padding: 1em;
+  background-color: #e2fdf6;
+  width: 5em;
+  height: 5em;
+  box-shadow: 0 0 16px 8px #2a6f97;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: .5s;
+  transition-property: transform;
+}
+
+.components_fruitTitle__GuaJP {
+  position: absolute;
+  display: none;
+  width: 10em;
+  bottom: -1.8em;
+  font-size: 14px;
+  color: #e2fdf6;
+}
+
+.components_fruitImage__c9cLT {
+  width: 3em;
+  height: 3em;
+}
+
+.components_fruit__XkrR_:hover .components_fruitTitle__GuaJP {
+  display: block;
+}
+
+.components_fruit__XkrR_:hover svg.components_fruitImage__c9cLT {
+  transition: all 0.65s;
+  transform: rotateY(360deg);
+}
+
+.components_fruit__XkrR_:hover svg#components_aboutImage__YYaNV circle,
+.components_fruit__XkrR_:hover svg#components_aboutImage__YYaNV path {
+  fill: #e2fdf6;
+}
+
+.components_fruit__XkrR_:hover svg#components_lineImage__Vsu_H path,
+.components_fruit__XkrR_:hover svg#components_lineImage__Vsu_H g {
+  stroke: #e2fdf6;
+}
+
+.components_fruit__XkrR_:hover svg#components_lineImage__Vsu_H rect,
+.components_fruit__XkrR_:hover svg#components_lineImage__Vsu_H ellipse,
+.components_fruit__XkrR_:hover svg#components_lineImage__Vsu_H .components_fruitPathSpecialFill__egnSM {
+  fill: #e2fdf6;
+}
+
+.components_fruit__XkrR_:hover {
+  border: none;
+  background-color: #084774;
+  transform: scale(1.05);
+}
+
+/* Layout */
+.components_componentContainer__Y1i06 {
+  margin: 1em 0 0 0;
+  padding: 2em 14em;
+  width: 100%;
+  text-align: left;
+  color: #c4ceed;
+}
+
+/* Menu */
+.components_menu__1uual {
+  display: flex;
+  padding: 2em 12em;
+}
+
+.components_menuItem__vkXPQ {
+  margin: 0 3em 0 0;
+  text-decoration: none;
+  color: #4d5973;
+}
+
+.components_menuItem__vkXPQ:hover,
+.components_activeLink__Cfs3c {
+  color: #ccd6f6;
+}
+
+/* Header */
+.components_header__EDsYP {
+  display: flex;
+  align-items: center;
+  padding: 4em 0;
+}
+
+.components_header__EDsYP h3 {
+  font-size: 1.5em;
+}
+
+.components_headerLine__SUwjd {
+  background-color: #233554;
+  height: 1px;
+  width: 75%;
+  margin: 0 0 0 2em;
+}
+
+/* PROJECTS */
+.components_projectMain__RSHkV {
+  text-align: left;
+  display: flex;
+  gap: 4em;
+  align-items: center;
+}
+
+.components_projectMain__RSHkV:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.components_projectImageContainer__xJFqy {
+  width: 50%;
+  cursor: pointer;
+}
+
+.components_projectImage__q9I_F {
+  max-width: 100%;
+}
+
+.components_projectDescriptionContainer__FMPE8 {
+  display: block;
+  width: 50%;
+}
+
+.components_projectTitle__M69ld {
+  color: #c4ceed;
+  margin: 0 0 2em 0;
+  font-size: 1.15em;
+}
+
+.components_projectDescription__Pl969 {
+  color: #c4ceed;
+  background-color: #112240;
+  padding: 2em;
+  line-height: 1.6em;
+  font-size: 1.05em;
+  letter-spacing: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.components_projectStack__1oxuJ {
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  list-style: none;
+  color: #c4ceed;
+  margin: 2em 0 0 0;
+  font-size: 1.1em;
+}
+
+/* RESUME */
+.components_expMain__7KseK {
+  margin: 1em 0 0 0;
+  width: 100%;
+}
+
+.components_expTitle__WFRyY {
+  font-size: 1.1em;
+  color: #c4ceed;
+  letter-spacing: 2px;
+  margin: 0 0 .4em 0;
+}
+
+.components_expTitle__WFRyY span {
+  color: #00d6b4;
+}
+
+.components_expSubtitle__Kajvf {
+  font-family: 'Roboto Mono', monospace;
+  font-size: .9em;
+  line-height: 1.2em;
+  color: #c4ceed;
+  letter-spacing: 1px;
+}
+
+.components_expDescriptionList__2BpPV {
+  margin: 1.5em 0 0 0;
+  list-style: none;
+  width: 80%;
+}
+
+.components_expDescriptionList__2BpPV li {
+  padding: 0 0 1em 0;  
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+}
+
+/* ABOUT */
+.components_aboutPar__XJ8Kv {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.components_twoColList__YqP9T {
+  display: flex;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/page.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+.page_main__GlU4n {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(0, 3, 8);
+}
+
+.page_treeBg___6g1H {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/List/list.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.list_listBulletSquare__JlDRy {
+  color: #00d6b4;
+}
+
+.list_listText__zPfKF {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/Tabs/tabs.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.tabs_tabMain__1A33O {
+  display: flex;
+  color: #c4ceed;
+  text-align: left;
+  gap: 2em;
+}
+
+.tabs_tabList__jpoOZ {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  list-style: none;
+}
+
+.tabs_tabList__jpoOZ li {
+  color: #4d5973;
+  cursor: pointer;
+  padding: 1em;
+}
+
+.tabs_activeTab__dHU90 {
+  color: #00ad92 !important;
+  border-left: 2px solid #00ad92;
+}
