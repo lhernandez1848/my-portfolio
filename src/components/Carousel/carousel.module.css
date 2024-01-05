@@ -1,0 +1,97 @@
+.carousel {
+  overflow: hidden;
+  margin: 2em 0 0 0;
+}
+
+.carouselHeaderContainer {
+  width: 100%;
+  padding: 0 6em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carouselHeaderContainer .carouselHeaders h2 {
+  font-size: 2.5em;
+  font-family: 'ClashGrotesk-Bold';
+}
+
+.carouselHeaderContainer .carouselHeaders h4 {
+  font-size: 1.5em;
+  font-family: 'ClashGrotesk-Semibold';
+}
+
+.carouselHeaderMarkers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.carouselMarker {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#carouselActiveMarker {
+  background: #1162DC;
+  width: 18px;
+  height: 18px;
+}
+
+#carouselInactiveMarker {
+  background: #6096E8;
+  width: 16px;
+  height: 16px;
+}
+
+.carouselFramesContainer {
+  white-space: nowrap;
+  transition: transform .5s;
+  margin: 2em 0;
+  width: 100%;
+}
+
+.carouselFrame {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.carouselImageframe {
+  width: 100%;
+  padding: 0 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselImageframe .carouselFrameImage {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .carouselHeaderContainer {
+    flex-direction: column;
+  }
+
+  .carouselHeaderMarkers {
+    justify-content: center;
+    margin: 1.5em 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .carouselHeaderContainer {
+    padding: 0 2em;
+  }
+
+  .carouselHeaderContainer .carouselHeaders h2 {
+    font-size: 1.5em;
+  }
+
+  .carouselHeaderContainer .carouselHeaders h4 {
+    font-size: 1em;
+  }
+}
