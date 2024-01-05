@@ -1,5 +1,3 @@
-'use client'
-
 import { useState } from 'react';
 import styles from './carousel.module.css';
 import { useSwipeable } from 'react-swipeable';

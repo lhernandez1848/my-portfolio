@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import styles from './components.module.css'
 
 export default function Fruit(props) {

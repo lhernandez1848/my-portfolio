@@ -1,4 +1,4 @@
-import Header from '@/components/Header'
+import Header from '../Header'
 import List from '../List/List'
 import styles from '../components.module.css'
 import Layout from '../Layout'
