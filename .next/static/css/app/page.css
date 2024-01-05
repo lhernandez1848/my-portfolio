@@ -143,7 +143,7 @@
 
 .components_projectDescription__Pl969 {
   color: #c4ceed;
-  background-color: #112240;
+  background-color: rgb(1, 22, 49);
   padding: 2em;
   line-height: 1.6em;
   font-size: 1.05em;
@@ -239,6 +239,112 @@
 .list_listText__zPfKF {
   font-size: 1em;
   line-height: 1.5em;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/Modal/modal.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+.modal_modalMain__S8llg {
+  width: 100%;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/Carousel/carousel.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.carousel_carousel__VyKeP {
+  overflow: hidden;
+  margin: 2em 0 0 0;
+}
+
+.carousel_carouselHeaderContainer__H19BS {
+  width: 100%;
+  padding: 0 6em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel_carouselHeaderContainer__H19BS .carousel_carouselHeaders__MsdDT h2 {
+  font-size: 2.5em;
+  font-family: 'ClashGrotesk-Bold';
+}
+
+.carousel_carouselHeaderContainer__H19BS .carousel_carouselHeaders__MsdDT h4 {
+  font-size: 1.5em;
+  font-family: 'ClashGrotesk-Semibold';
+}
+
+.carousel_carouselHeaderMarkers__e1NuL {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.carousel_carouselMarker__ANIYY {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#carousel_carouselActiveMarker___JsBO {
+  background: #1162DC;
+  width: 18px;
+  height: 18px;
+}
+
+#carousel_carouselInactiveMarker__xaWVi {
+  background: #6096E8;
+  width: 16px;
+  height: 16px;
+}
+
+.carousel_carouselFramesContainer__1gk7a {
+  white-space: nowrap;
+  transition: transform .5s;
+  margin: 2em 0;
+  width: 100%;
+}
+
+.carousel_carouselFrame__a5_0O {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.carousel_carouselImageframe__oMnci {
+  width: 100%;
+  padding: 0 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel_carouselImageframe__oMnci .carousel_carouselFrameImage__Xt3vU {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .carousel_carouselHeaderContainer__H19BS {
+    flex-direction: column;
+  }
+
+  .carousel_carouselHeaderMarkers__e1NuL {
+    justify-content: center;
+    margin: 1.5em 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .carousel_carouselHeaderContainer__H19BS {
+    padding: 0 2em;
+  }
+
+  .carousel_carouselHeaderContainer__H19BS .carousel_carouselHeaders__MsdDT h2 {
+    font-size: 1.5em;
+  }
+
+  .carousel_carouselHeaderContainer__H19BS .carousel_carouselHeaders__MsdDT h4 {
+    font-size: 1em;
+  }
 }
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/Tabs/tabs.module.css ***!
