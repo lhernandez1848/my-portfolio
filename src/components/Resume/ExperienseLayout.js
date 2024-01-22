@@ -1,4 +1,4 @@
-import List from '../List/List';
+import List from '../../components/List/List';
 import styles from '../components.module.css';
 
 export default function ExperienceLayout(props) {

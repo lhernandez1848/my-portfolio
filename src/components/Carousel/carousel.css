@@ -1,0 +1,18 @@
+.carousel {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.carousel-indicators button {
+  background: #013a63 !important;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(3, 29, 48, 0.7) !important;
+}
+
+.carousel-inner {
+  max-height: 700px !important;
+  overflow-y: auto !important;
+}

@@ -1,4 +1,5 @@
 .fruit {
+  border: none;
   border-radius: 100%;
   padding: 1em;
   background-color: #e2fdf6;
@@ -68,17 +69,18 @@
 
 /* Layout */
 .componentContainer {
-  margin: 1em 0 0 0;
-  padding: 2em 14em;
+  padding: 2em 10%;
   width: 100%;
   text-align: left;
   color: #c4ceed;
+  background: rgb(0, 3, 8);
 }
 
 /* Menu */
 .menu {
   display: flex;
-  padding: 2em 12em;
+  padding: 2em 10%;
+  background: rgb(0, 3, 8);
 }
 
 .menuItem {
@@ -88,7 +90,7 @@
 }
 
 .menuItem:hover,
-.activeLink {
+.menuItem.activeLink {
   color: #ccd6f6;
 }
 
@@ -101,6 +103,7 @@
 
 .header h3 {
   font-size: 1.5em;
+  color: #c4ceed;
 }
 
 .headerLine {
@@ -110,61 +113,11 @@
   margin: 0 0 0 2em;
 }
 
-/* PROJECTS */
-.projectMain {
-  text-align: left;
-  display: flex;
-  gap: 4em;
-  align-items: center;
-}
-
-.projectMain:nth-child(odd) {
-  flex-direction: row-reverse;
-}
-
-.projectImageContainer {
-  width: 50%;
-  cursor: pointer;
-}
-
-.projectImage {
-  max-width: 100%;
-}
-
-.projectDescriptionContainer {
-  display: block;
-  width: 50%;
-}
-
-.projectTitle {
-  color: #c4ceed;
-  margin: 0 0 2em 0;
-  font-size: 1.15em;
-}
-
-.projectDescription {
-  color: #c4ceed;
-  background-color: rgb(1, 22, 49);
-  padding: 2em;
-  line-height: 1.6em;
-  font-size: 1.05em;
-  letter-spacing: 3px;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-.projectStack {
-  display: flex;
-  flex-direction: row;
-  gap: 3em;
-  list-style: none;
-  color: #c4ceed;
-  margin: 2em 0 0 0;
-  font-size: 1.1em;
-}
-
 /* RESUME */
+.resume {
+  padding: 0 1em;
+}
+
 .expMain {
   margin: 1em 0 0 0;
   width: 100%;
@@ -202,12 +155,84 @@
   gap: 1.5em;
 }
 
+.expDescriptionList {
+  margin: 1.5em 0 0 0;
+  list-style: none;
+  width: 80%;
+}
+
+.expDescriptionList li {
+  padding: 0 0 1em 0;  
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+}
+
 /* ABOUT */
+.about {
+  padding: 0 1em;
+}
+
 .aboutPar {
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.5em;
+  color: #c4ceed;
+  text-align: start;
+  margin: 0 0 1em 0;
+}
+
+.aboutPar:nth-child(4) {
+  margin: 0;
 }
 
 .twoColList {
   display: flex;
+  color: #c4ceed;
+}
+
+/* TABS */
+.tabMain {
+  display: flex;
+  color: #c4ceed;
+  text-align: left;
+  gap: 2em;
+}
+
+.tabList {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  list-style: none;
+}
+
+.tabList li {
+  color: #4d5973;
+  cursor: pointer;
+  padding: 1em;
+}
+
+.activeTab {
+  color: #00ad92 !important;
+  border-left: 2px solid #00ad92;
+}
+
+/* LIST */
+.listBulletSquare {
+  color: #00d6b4;
+}
+
+.listText {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+@media only screen and (max-width: 1130px) {
+  .componentContainer {
+    padding: 2em 5%;
+    text-align: left;
+  }
+
+  .menu {
+    padding: 2em 5%;
+  }
 }

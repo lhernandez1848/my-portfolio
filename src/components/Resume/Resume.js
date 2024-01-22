@@ -1,8 +1,8 @@
 import ExperienceLayout from './ExperienseLayout';
-import Header from '../Header';
-import Tabs from '../Tabs/Tabs';
-import { experience } from '../../data/data';
-import Layout from '../Layout';
+import Header from '../../components/Header';
+import Tabs from '../../components/Tabs/Tabs';
+import { experience } from '../../data/data'
+import styles from '../components.module.css'
 
 export default function Resume() {
   const tabArray = [];
@@ -10,8 +10,8 @@ export default function Resume() {
     tabArray.push({ name: element.name, body: <ExperienceLayout data={element} /> })
   });
 
-  return <Layout id={'resume'}>
-    <Header name='Experience' />
+  return <article className={styles.resume}>
+    <Header name='Experience' style={{ padding: '0 0 1em 0' }} />
     <Tabs tabs={tabArray} />
-  </Layout>
+  </article>
 }
