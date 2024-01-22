@@ -1,3 +1,21 @@
 .modalMain {
   width: 100%;
 }
+
+.modalHeaderRow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 0 1em 0;
+}
+
+.modalCloseButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modalCloseButton .modalCloseButtonImage {
+  width: 1.5em;
+  height: 1.5em;
+}

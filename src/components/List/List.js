@@ -1,4 +1,4 @@
-import styles from './list.module.css';
+import styles from '../components.module.css';
 
 export default function List(props) {
   const listItems = props.listItems;
