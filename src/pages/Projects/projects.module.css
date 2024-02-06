@@ -1,0 +1,60 @@
+.projectSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  width: 100%;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 250px;
+  padding: 2em;
+  background: #0B111A;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(54, 74, 96, 0.3);
+}
+
+.projectImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.projectDescriptionContainer {
+  display: grid;
+  grid-template-rows: .2fr 1.6fr .2fr;
+  grid-template-columns: 1fr;
+  height: 100%;
+  margin-top: -5em;
+  padding-top: 1em;
+  background: linear-gradient( rgba(11, 17, 26, 1) 0%, rgba(0, 0, 0, 0) 350%);
+}
+
+.projectDescription {
+  line-height: 1.6em;
+  font-size: 1.05em;
+  letter-spacing: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.projectTitle {
+  color: #c4ceed;
+  margin: 0 0 1.5em 0;
+  font-size: 1.8em;
+  letter-spacing: 2px;
+}
+
+.projectStack {
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  list-style: none;
+  color: #c4ceed;
+  margin: 2em 0 0 0;
+  font-size: 1.1em;
+}

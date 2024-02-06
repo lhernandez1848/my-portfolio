@@ -3,14 +3,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(0, 3, 8);
 }
 
 .treeBg {
   height: 100vh;
   width: 100%;
   display: flex;
-  background: radial-gradient(ellipse at top, rgba(1,65,136,1) 0%, rgb(0, 14, 31) 40%, rgba(0, 2, 5, 1) 60%);
+  background: radial-gradient(ellipse at top, #014188 0%, rgb(0, 14, 31) 40%, rgba(0, 2, 5, 1) 60%);
   position: relative;
 }
 
@@ -35,68 +34,6 @@
   }
 }
 
-/* PROJECTS */
-.projectMain {
-  text-align: left;
-  display: flex;
-  gap: 4em;
-  align-items: center;
-  margin: 0 0 4em 0;
-}
-
-.projectMain:nth-child(odd) {
-  flex-direction: row-reverse;
-}
-
-.projectImageContainer {
-  width: 50%;
-  cursor: pointer;
-  display: flex;
-}
-
-.projectMain:nth-child(odd) .projectImageContainer {
-  justify-content: flex-end;
-}
-
-.projectImage {
-  max-width: 100%;
-  height: 500px;
-}
-
-.projectDescriptionContainer {
-  display: block;
-  width: 50%;
-}
-
-.projectTitle {
-  color: #c4ceed;
-  margin: 0 0 2em 0;
-  font-size: 1.15em;
-}
-
-.projectDescription {
-  color: #c4ceed;
-  background-color: rgb(1, 22, 49);
-  padding: 2em;
-  line-height: 1.6em;
-  font-size: 1.05em;
-  letter-spacing: 3px;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-.projectStack {
-  display: flex;
-  flex-direction: row;
-  gap: 3em;
-  list-style: none;
-  color: #c4ceed;
-  margin: 2em 0 0 0;
-  font-size: 1.1em;
-}
-
-
 
 @media only screen and (max-width: 900px) {
   .projectMain {
@@ -115,5 +52,21 @@
 
   .projectMain:nth-child(odd) .projectImageContainer {
     justify-content: center;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .fruitContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .fruitContainer .fruit {
+    position: relative;
   }
 }

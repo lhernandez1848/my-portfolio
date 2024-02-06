@@ -68,19 +68,27 @@
 }
 
 /* Layout */
+.componentMain {
+  min-height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
 .componentContainer {
   padding: 2em 10%;
   width: 100%;
   text-align: left;
   color: #c4ceed;
-  background: rgb(0, 3, 8);
+  background-color: transparent;
 }
 
 /* Menu */
 .menu {
   display: flex;
   padding: 2em 10%;
-  background: rgb(0, 3, 8);
+  background: transparent;
 }
 
 .menuItem {
@@ -101,93 +109,16 @@
   padding: 4em 0;
 }
 
-.header h3 {
-  font-size: 1.5em;
+.header h2 {
+  font-size: 2em;
+  text-align: start;
   color: #c4ceed;
 }
 
 .headerLine {
   background-color: #233554;
   height: 1px;
-  width: 75%;
   margin: 0 0 0 2em;
-}
-
-/* RESUME */
-.resume {
-  padding: 0 1em;
-}
-
-.expMain {
-  margin: 1em 0 0 0;
-  width: 100%;
-}
-
-.expTitle {
-  font-size: 1.1em;
-  color: #c4ceed;
-  letter-spacing: 2px;
-  margin: 0 0 .4em 0;
-}
-
-.expTitle span {
-  color: #00d6b4;
-}
-
-.expSubtitle {
-  font-family: 'Roboto Mono', monospace;
-  font-size: .9em;
-  line-height: 1.2em;
-  color: #c4ceed;
-  letter-spacing: 1px;
-}
-
-.expDescriptionList {
-  margin: 1.5em 0 0 0;
-  list-style: none;
-  width: 80%;
-}
-
-.expDescriptionList li {
-  padding: 0 0 1em 0;  
-  display: flex;
-  flex-direction: row;
-  gap: 1.5em;
-}
-
-.expDescriptionList {
-  margin: 1.5em 0 0 0;
-  list-style: none;
-  width: 80%;
-}
-
-.expDescriptionList li {
-  padding: 0 0 1em 0;  
-  display: flex;
-  flex-direction: row;
-  gap: 1.5em;
-}
-
-/* ABOUT */
-.about {
-  padding: 0 1em;
-}
-
-.aboutPar {
-  font-size: 1.1em;
-  line-height: 1.5em;
-  color: #c4ceed;
-  text-align: start;
-  margin: 0 0 1em 0;
-}
-
-.aboutPar:nth-child(4) {
-  margin: 0;
-}
-
-.twoColList {
-  display: flex;
-  color: #c4ceed;
 }
 
 /* TABS */
@@ -199,6 +130,7 @@
 }
 
 .tabList {
+  width: 20%;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -209,21 +141,35 @@
   color: #4d5973;
   cursor: pointer;
   padding: 1em;
+  border-radius: 5px;
 }
 
 .activeTab {
-  color: #00ad92 !important;
-  border-left: 2px solid #00ad92;
+  color: #c4ceed !important;
+  background-color: #39819F;
 }
 
 /* LIST */
+.unorderedList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.unorderedList li {
+  display: flex;
+  gap: 1em;
+}
+
 .listBulletSquare {
-  color: #00d6b4;
+  color: #39819F;
 }
 
 .listText {
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  line-height: 1.4rem;
 }
 
 @media only screen and (max-width: 1130px) {

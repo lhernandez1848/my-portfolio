@@ -1,0 +1,39 @@
+.modalMain {
+  width: 100%;
+}
+
+.modalHeaderRow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 0 1em 0;
+}
+
+.modalCloseButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modalCloseButton .modalCloseButtonImage {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+
+
+@media only screen and (max-width: 1050px) {
+  .ReactModal__Overlay .ReactModal__Content,
+  .ReactModal__Content--after-open {
+    width: 60% !important;
+    max-height: 90%;
+    overflow-y: auto;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .ReactModal__Overlay .ReactModal__Content,
+  .ReactModal__Content--after-open {
+    width: 80% !important;
+  }
+}
