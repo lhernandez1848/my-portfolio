@@ -2,6 +2,7 @@ export const experience = [
   {
     name: 'Frontend Developer',
     location: 'Periculum',
+    startYear: '2021',
     timeFrame: 'September 2021 to May 2023',
     list: [
       'Responsible for the implementation and design of Insights, a data-driven analytics and credit scoring engine which helps clients predict their customer’s financial standing',
@@ -12,12 +13,27 @@ export const experience = [
   },
   {
     name: 'UX/UI Designer',
-    location: 'Communitech',
+    location: 'Digital Main Street',
+    startYear: '2021',
     timeFrame: 'March 2021 to June 2021',
     list: [
       'Part of a diverse team made up of a Digital Marketer, Graphic Designer, Web Developer and Copywriter',
       'Collaborated in creating a digital transformation plan to assist small businesses during the COVID-19 pandemic',
       'Designed, redesigned, and developed several websites to suit each individual client’s needs'
+    ]
+  }
+]
+
+export const education = [
+  {
+    name: 'Computer Programmer / Analyst',
+    location: 'Conestoga College',
+    startYear: '2017',
+    timeFrame: 'September 2017 to April 2020',
+    list: [
+      'Awarded Graduation with Distinction',
+      'Dean’s List 2020',
+      'GPA: 3.8'
     ]
   }
 ]
@@ -33,16 +49,14 @@ export const projects = [
   {
     title: 'IVY',
     stack: ['Android Studio', 'Java', 'NodeJS'],
-    description: ['IVY is a mobile application that provides main inventory functions including order generation, track order, view order history, set and check inventory, usage analysis, and par level recommendations. This app was developed as part of the Capstone graduation project. Our team of three was asked to make this project for the client company, Huex Inc.',
-      'The back-end runs on a Linux database server and is accessed through a web service using MS SQL Server and NodeJS, which was set up by the client company, Huex Inc.'],
-    mainImage: '/assets/ivy-login-tb.png',
+    description: ['IVY is a mobile application that provides main inventory functions. This app was developed as part of the Capstone graduation project. Our team of three was asked to make this project for the client company, Huex Inc.'],
+    mainImage: '/assets/ivy-group.png',
     images: ['/assets/ivy-login.png', '/assets/ivy-product-result.png', '/assets/ivy-value.png', '/assets/ivy-pie.png']
   },
   {
     title: 'Avaanz Website',
     stack: ['Squarespace', 'Javascript'],
-    description: ['Avaanz Ltd. is a human environment consulting firm specializing in socio-economics, environmental services, facilitation and engagement to advance community well-being.', 
-      'This website was my first ever project at Communitech, and as a recent graduate. As a team, we designed and implemented this site from the ground up based on the client’s needs.'],
+    description: ['Avaanz Ltd. is a human environment consulting firm. This website was my first project at Digital Main Street, and as a recent graduate. As a team, we designed and implemented this site from the ground up based on the client’s needs.'],
     mainImage: '/assets/avaanz.png',
     images: ['/assets/avaanz-full.png', '/assets/avaanz-team.png', '/assets/avaanz-services.png']
   }

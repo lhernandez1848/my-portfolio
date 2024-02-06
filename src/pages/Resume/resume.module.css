@@ -1,0 +1,138 @@
+/* RESUME */
+.resume h3 {
+  font-size: 2rem;
+}
+
+.resumeSection {
+  display: grid;
+  grid-template-columns: 5% 5% 90%;
+  gap: 4em;
+  margin: 3em 0;
+}
+            
+.resumeYear {
+  width: 80px;
+  height: 40px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #496677;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #496677;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+}
+
+.resumeLineContainer {
+  margin-top: .5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resumeCircle {
+  width: 20px;
+  height: 20px;
+  background-color: #c28f5d;
+  box-shadow: 0 0 16px #f6bd60;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.resumeLine {
+  width: 2px;
+  background-color: #3f677e;
+  height: 100%;
+  margin: 0 2em;
+}
+
+.resumeBox {
+  width: 85%;
+}
+
+.expMain {
+  width: 100%;
+}
+
+.expTitle {
+  font-size: 2em;
+  color: #c4ceed;
+  letter-spacing: 2px;
+  margin: 0 0 .4em 0;
+}
+
+.expTitle span {
+  color: #39819F;
+}
+
+.expSubtitle {
+  font-family: 'Roboto Mono', monospace;
+  font-size: .9em;
+  line-height: 1.2em;
+  color: #c4ceed;
+  letter-spacing: 1px;
+  margin-bottom: 2em;
+}
+
+.expDescriptionList {
+  margin: 1.5em 0 0 0;
+  list-style: none;
+  width: 50%;
+}
+
+.expDescriptionList li {
+  padding: 0 0 1em 0;  
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+}
+
+.expDescriptionList {
+  margin: 1.5em 0 0 0;
+  list-style: none;
+  width: 80%;
+}
+
+.expDescriptionList li {
+  padding: 0 0 1em 0;  
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+}
+
+@media only screen and (max-width: 1100px) {
+  .expDescriptionList {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .resumeSection {
+    display: flex;
+    background: #0B111A;
+    padding: 1em;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(54, 74, 96, 0.3);
+  }
+
+  .resumeLineContainer, .resumeYear {
+    display: none;
+  }
+
+  .resumeBox {
+    width: 100%;
+  }
+}

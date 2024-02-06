@@ -1,0 +1,67 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  gap: 4em;
+  margin: 2em 0 0 0;
+  justify-content: center;
+}
+
+.aboutImage {
+  height: calc(100vh - 20em);
+  width: auto;
+}
+
+.aboutGreeting {
+  font-size: 3em;
+  margin: 0 0 1em 0;
+  font-weight: 900;
+}
+
+.aboutGreeting span {
+  color: #39819F;
+}
+
+.aboutPar {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  color: #c4ceed;
+  text-align: start;
+  margin: 0 0 1em 0;
+}
+
+.twoColList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 900px) {
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: .6fr 1.4fr;
+    gap: 1em;
+  }
+
+  .aboutImage {
+    height: auto;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .aboutDescContainer {
+    background: #0B111A;
+    padding: 1em;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(54, 74, 96, 0.3);
+  }  
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutImage {
+    width: 100%;
+  } 
+}

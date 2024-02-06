@@ -1,11 +1,11 @@
-import styles from './modal.module.css'
+import './modal.css'
 
 export default function ModalBody({ children, header, close }) {
-  return <div className={styles.modalMain}>
-    <div className={styles.modalHeaderRow}>
+  return <div className='modalMain'>
+    <div className='modalHeaderRow'>
       <h2>{header}</h2>
-      <button onClick={close} className={styles.modalCloseButton}>
-        <img src='/assets/close.png' alt='close' className={styles.modalCloseButtonImage} />
+      <button onClick={close} className='modalCloseButton'>
+        <img src='/assets/close.png' alt='close' className='modalCloseButtonImage' />
       </button>
     </div>
     { children }

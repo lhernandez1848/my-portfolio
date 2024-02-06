@@ -1,5 +1,5 @@
-import List from '../../components/List/List';
-import styles from '../components.module.css';
+import List from '../../components/List/List'
+import styles from './resume.module.css'
 
 export default function ExperienceLayout(props) {
   const data = props.data;

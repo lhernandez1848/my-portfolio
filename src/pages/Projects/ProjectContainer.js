@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from '../../app.module.css'
+import styles from './projects.module.css'
 import Modal from 'react-modal'
 import ModalBody from '../../components/Modal/ModalBody';
 import Gallery from '../../components/Gallery/Gallery';
@@ -29,12 +29,13 @@ export default function ProjectContainer(props) {
 
   function closeModal() { setIsOpen(false) }
 
-  return <section className={styles.projectMain}>
-    <div className={styles.projectImageContainer} onClick={() => setIsOpen(true) }>
+  return <div className={styles.projectCard}>
+    {/* <div className={styles.projectImageContainer} onClick={() => setIsOpen(true) }>
       <img className={styles.projectImage} src={props.mainImage} alt={props.title} />
-    </div>
+    </div> */}
+    <img className={styles.projectImage} src={props.mainImage} alt={props.title} />
     <article className={styles.projectDescriptionContainer}>
-      <h4 className={styles.projectTitle}>{props.title}</h4>
+      <h3 className={styles.projectTitle}>{props.title}</h3>
       <div className={styles.projectDescription}>
         {props.description.map((e, i) => <p key={i}>{e}</p>)}
       </div>
@@ -49,5 +50,5 @@ export default function ProjectContainer(props) {
         <Gallery images={props.images} />
       </ModalBody>
     </Modal>
-  </section>
+  </div>
 }
