@@ -30,10 +30,7 @@ export default function ProjectContainer(props) {
   function closeModal() { setIsOpen(false) }
 
   return <div className={styles.projectCard}>
-    {/* <div className={styles.projectImageContainer} onClick={() => setIsOpen(true) }>
-      <img className={styles.projectImage} src={props.mainImage} alt={props.title} />
-    </div> */}
-    <img className={styles.projectImage} src={props.mainImage} alt={props.title} />
+    <img className={styles.projectImage} src={props.mainImage} alt={props.title} onClick={() => setIsOpen(true) } />
     <article className={styles.projectDescriptionContainer}>
       <h3 className={styles.projectTitle}>{props.title}</h3>
       <div className={styles.projectDescription}>
