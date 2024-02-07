@@ -5,6 +5,7 @@ import ResumeSvg from '../svg/Resume'
 import ProjectsSvg from '../svg/Projects'
 import Tree from '../svg/Tree'
 import FallingArrow from '../components/FallingArrow/FallingArrow'
+import Footer from '../components/Footer/Footer'
 
 export default function Home() {
   return <main className={styles.main}>
@@ -12,10 +13,11 @@ export default function Home() {
       <FallingArrow number={10} />
       <Tree />
       <div className={styles.fruitContainer}>
-        <Fruit style={{ top: '40%', left: '25%' }} title={'Projects'} image={<ProjectsSvg />} link={'/projects'} />
+        <Fruit style={{ top: '40%', left: 'calc(50% - 25em)' }} title={'Projects'} image={<ProjectsSvg />} link={'/projects'} />
         <Fruit style={{ top: '5%', left: '50%' }} title={'Resume'} image={<ResumeSvg />} link={'/resume'} />
-        <Fruit style={{ top: '30%', left: '70%' }} title={'About Me'} image={<AboutSvg />} link={'/about'} />
-      </div>      
+        <Fruit style={{ top: '30%', left: 'calc(50% + 20em)' }} title={'About Me'} image={<AboutSvg />} link={'/about'} />
+      </div>
     </div>
+    <Footer style={{ position: 'absolute', bottom: '0' }} />
   </main>
 }

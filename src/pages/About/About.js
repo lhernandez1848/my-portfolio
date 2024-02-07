@@ -4,7 +4,7 @@ import Layout from '../../components/Layout'
 
 export default function About() {
   return <Layout id='about' pageName={styles.about}>
-    <img src='/assets/person.png' alt='Myself'  className={styles.aboutImage} />
+    <img src='/assets/lisdanay.png' alt='Myself'  className={styles.aboutImage} />
     <article className={styles.aboutDescContainer}>
       <h3>About me</h3>
       <h4 className={styles.aboutGreeting}>Hi, I'm <span>Lisdanay Hernandez!</span></h4>

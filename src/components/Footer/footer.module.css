@@ -1,0 +1,14 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+}
+
+.footerLinkImage {
+  width: 28px;
+  height: 28px;
+}
