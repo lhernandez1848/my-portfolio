@@ -1,51 +1,25 @@
-import { useState } from 'react';
+import { Link } from 'react-router-dom'
 import styles from './projects.module.css'
-import Modal from 'react-modal'
-import ModalBody from '../../components/Modal/ModalBody';
-import Gallery from '../../components/Gallery/Gallery';
 
 export default function ProjectContainer(props) {
-  const [modalIsOpen, setIsOpen] = useState(false);
-  const customStyles = {
-    overlay: {
-      background: "rgba(60, 67, 80, 0.75)"
-    },
-    content: {
-      top: '50%',
-      left: '50%',
-      right: 'auto',
-      bottom: 'auto',
-      transform: 'translate(-50%, -50%)',
-      maxWidth: '90%',
-      minWidth: 'auto',
-      backgroundColor: '#171E2E',
-      border: 'none',
-      borderRadius: '10px',
-      overflow: 'hidden'
-    },
-  };
+  const data = props.data;
 
-  function afterOpenModal() { }
-
-  function closeModal() { setIsOpen(false) }
-
-  return <div className={styles.projectCard}>
-    <img className={styles.projectImage} src={props.mainImage} alt={props.title} onClick={() => setIsOpen(true) } />
-    <article className={styles.projectDescriptionContainer}>
-      <h3 className={styles.projectTitle}>{props.title}</h3>
+  return <article className={styles.projectCard}>
+    <img className={styles.projectImage} src={data.mainImage} alt={data.title} />      
+    <div className={styles.projectDescriptionContainer}>
+      <h3 className={styles.projectTitle}>{data.title}</h3>
       <div className={styles.projectDescription}>
-        {props.description.map((e, i) => <p key={i}>{e}</p>)}
+        {data.description.map((e, i) => <p key={i}>{e}</p>)}
       </div>
-      {props.stack &&
+      {data.link 
+        ? <Link to={data.link} className={styles.projectLink} target='_blank' rel='noopener noreferrer'>{data.linkTitle} <div className={styles.linkIcon}>&#129125;</div></Link >
+        : <button className={styles.projectLink} onClick={() => props.sidebarCallback(true, data)}>{data.linkTitle} <div className={styles.linkIconIn}>&#10784;</div></button>
+      }      
+      {data.stack &&
         <ul className={styles.projectStack}>
-          {props.stack.map((e, i) => <li key={i}>{e}</li>)}
+          {data.stack.map((e, i) => <li key={i}>{e}</li>)}
         </ul>
       }      
-    </article>
-    <Modal isOpen={modalIsOpen} style={customStyles} onAfterOpen={afterOpenModal} onRequestClose={closeModal}>
-      <ModalBody close={() => closeModal()}>
-        <Gallery images={props.images} />
-      </ModalBody>
-    </Modal>
-  </div>
+    </div>
+  </article>
 }
