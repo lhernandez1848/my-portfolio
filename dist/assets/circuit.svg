@@ -89,6 +89,6 @@
     <rect id="Rectangle_61" data-name="Rectangle 61" width="11" height="11" transform="translate(34 462)" fill="#317c9c" opacity="0.21"/>
     <rect id="Rectangle_62" data-name="Rectangle 62" width="11" height="11" transform="translate(15 547)" fill="#317c9c" opacity="0.21"/>
     <rect id="Rectangle_65" data-name="Rectangle 65" width="7" height="17" transform="translate(29 716)" fill="#317c9c" opacity="0.21"/>
-    <circle id="Ellipse_70" data-name="Ellipse 70" cx="400" cy="400" r="400" transform="translate(800 473)" fill="url(#radial-gradient)"/>
+    <!-- <circle id="Ellipse_70" data-name="Ellipse 70" cx="400" cy="400" r="400" transform="translate(800 473)" fill="url(#radial-gradient)"/> -->
   </g>
 </svg>
