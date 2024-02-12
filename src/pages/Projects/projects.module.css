@@ -48,39 +48,6 @@
   letter-spacing: 2px;
 }
 
-.projectLink {
-  background-color: transparent;
-  border: none;
-  text-decoration: none;
-  color: #5a87a1;
-  padding: 0;
-  text-align: start;
-  width: fit-content;
-  font-size: 0.875rem;
-  cursor: pointer;
-  margin-top: 1em;
-  display: flex;
-  align-items: center;
-  gap: .4em;
-}
-
-.linkIcon,
-.linkIconIn {
-  transition: all .3s ease-in-out;
-}
-
-.projectLink:hover {
-  color: #3f677e;
-}
-
-.projectLink:hover .linkIcon {
-  transform: translate(4px, -4px) scale(1.2);
-}
-
-.projectLink:hover .linkIconIn {
-  transform: translateX(4px) scale(1.2);
-}
-
 .projectStack {
   display: flex;
   flex-direction: row;

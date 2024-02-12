@@ -42,14 +42,15 @@ export const projects = [
   {
     title: 'Insights',
     stack: ['React', 'Redux', 'Auth0'],
+    shortDescription: 'Insights is a data-driven analytics and credit scoring engine that provides predictive insights into customer’s financial standing',
     description: ['Insights is a data-driven analytics and credit scoring engine that provides predictive insights into customer’s financial standing. From the Home page, a user can upload a bank statement, and, once processed, can view it’s Analytics, Credit Scoring, Affordability, etc.'],
     mainImage: '/assets/insights-home.png',
     images: ['/assets/insights-home-full.png', '/assets/insights-affordability.png', '/assets/insights-score.png'],
-    linkTitle: 'Read more'
   },
   {
     title: 'IVY',
     stack: ['Android Studio', 'Java', 'NodeJS'],
+    shortDescription: 'IVY is a mobile application that provides main inventory functions',
     description: ['IVY is a mobile application that provides main inventory functions. This app was developed as part of the Capstone graduation project. Our team of three was asked to make this project for the client company, Huex Inc.'],
     mainImage: '/assets/ivy-group.png',
     images: ['/assets/ivy-login.png', '/assets/ivy-product-result.png', '/assets/ivy-value.png', '/assets/ivy-pie.png'],
@@ -59,6 +60,7 @@ export const projects = [
   {
     title: 'Avaanz Website',
     stack: ['Squarespace', 'Javascript'],
+    shortDescription: 'Avaanz Ltd. is a human environment consulting firm',
     description: ['Avaanz Ltd. is a human environment consulting firm. This website was my first project at Digital Main Street, and as a recent graduate. As a team, we designed and implemented this site from the ground up based on the client’s needs.'],
     mainImage: '/assets/avaanz.png',
     images: ['/assets/avaanz-full.png', '/assets/avaanz-team.png', '/assets/avaanz-services.png'],
