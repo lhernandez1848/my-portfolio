@@ -1,5 +1,5 @@
 @import url("~react-image-gallery/styles/css/image-gallery.css");
 
 .image-gallery-image {
-  max-height: calc(100vh - 200px) !important;
+  height: 30vh !important;
 }

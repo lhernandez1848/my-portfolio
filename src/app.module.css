@@ -24,6 +24,39 @@
   animation: glow 2s ease-in-out infinite alternate;
 }
 
+.linkWithIcon {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  color: #5a87a1;
+  padding: 0;
+  text-align: start;
+  width: fit-content;
+  font-size: 0.875rem;
+  cursor: pointer;
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  gap: .4em;
+}
+
+.linkIcon,
+.linkIconIn {
+  transition: all .3s ease-in-out;
+}
+
+.linkWithIcon:hover {
+  color: #3f677e;
+}
+
+.linkWithIcon:hover .linkIcon {
+  transform: translate(4px, -4px) scale(1.2);
+}
+
+.linkWithIcon:hover .linkIconIn {
+  transform: translateX(4px) scale(1.2);
+}
+
 @keyframes glow {
   from {
     filter: drop-shadow( 0 0 5px #569ab8) drop-shadow( 0 0 15px #317c9c) drop-shadow( 0 0 20px #317c9c);

@@ -8,5 +8,5 @@ export default function Gallery(props) {
     }
   })
 
-  return <ImageGallery items={images} />
+  return <ImageGallery items={images} showThumbnails={false} showPlayButton={false} />
 }
