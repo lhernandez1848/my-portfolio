@@ -3,3 +3,7 @@
 .image-gallery-image {
   height: 30vh !important;
 }
+
+.image-gallery-thumbnails-bottom.fullscreen .image-gallery-image {
+  height: 100% !important;
+}
