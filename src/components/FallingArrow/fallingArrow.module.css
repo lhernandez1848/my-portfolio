@@ -2,8 +2,7 @@
   position: absolute;
   left: 50%;
   top: -20px;
-  height: 6px;
-  width: 10px;
+  width: 15px;
   color: #317c9c;
   filter: drop-shadow(0 0 6px #317c9c);
   animation: drop 10s linear infinite;
