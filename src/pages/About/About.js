@@ -8,7 +8,7 @@ export default function About() {
     <article className={styles.aboutDescContainer}>
       <h3>About me</h3>
       <h4 className={styles.aboutGreeting}>Hi, I'm <span>Lisdanay Hernandez!</span></h4>
-      <p className={styles.aboutPar}>I'm a Frontend developer based in Kitchener, Ontario, currently in search of an exciting role. With over 2 years of experience in designing, 
+      <p className={styles.aboutPar}>I'm a Front-end developer based in Kitchener, Ontario, currently in search of an exciting role. With over 2 years of experience in designing, 
       developing and maintaining web applications, I am looking to leverage my skills to produce applications that exceed user expectations.</p>
       <p className={styles.aboutPar}>I love building and designing clean, responsive, and accessible digital products.</p>
       <p className={styles.aboutPar}>My skills:</p>
