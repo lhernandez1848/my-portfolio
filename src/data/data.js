@@ -1,14 +1,15 @@
 export const experience = [
   {
-    name: 'Frontend Developer',
+    name: 'Front-end Developer',
     location: 'Periculum',
     startYear: '2021',
     timeFrame: 'September 2021 to May 2023',
     list: [
-      'Responsible for the implementation and design of Insights, a data-driven analytics and credit scoring engine which helps clients predict their customer’s financial standing',
-      'Worked on platform development projects from initial design through completion, optimizing for cross-browser compatibility and responsive layout',
-      'Collaborated with back-end developers, designers, and product team members to meet project requirements, new features, and desired functionalities for our web application',
-      'Managed and implemented company website development using WebFlow, working closely designers and product team'
+      'Implemented user interfaces for various company platforms including Insights; a data-driven analytic and credit scoring engine that predict customer financial standing.',
+      'Debugged and developed projects from initial design through completion, improving for cross-browser compatibility and responsive layout.',
+      'Collaborated with back-end developers, designers, and data analysts in daily scrum meetings in order to implement new features, and meet project requirements.',
+      'Streamlined frontend development process and improved code efficiency by writing unit tests with Jest and React Testing Libraries.',
+      'Managed and implemented company website using WebFlow, working closely with designers and product team. This increased mobile and traffic and provided a better user experience.'
     ]
   },
   {
@@ -18,8 +19,8 @@ export const experience = [
     timeFrame: 'March 2021 to June 2021',
     list: [
       'Part of a diverse team made up of a Digital Marketer, Graphic Designer, Web Developer and Copywriter',
-      'Collaborated in creating a digital transformation plan to assist small businesses during the COVID-19 pandemic',
-      'Designed, redesigned, and developed several websites to suit each individual client’s needs'
+      'Redesigned web platform for 10+ small businesses, resulting in an increase in their online sales and providing essential support during COVID-19 pandemic.',
+      'Collaboratively designed and implemented user-friendly websites, driving an improvement in user satisfaction.'
     ]
   }
 ]
@@ -32,9 +33,14 @@ export const education = [
     timeFrame: 'September 2017 to April 2020',
     list: [
       'Awarded Graduation with Distinction',
-      'Dean’s List 2020',
-      'GPA: 3.8'
+      'Dean’s List 2020'
     ]
+  },
+  {
+    name: 'GOOGLE UX DESIGN PROFESSIONAL CERTIFICATE',
+    location: 'Coursera',
+    startYear: '2024',
+    timeFrame: 'January 2024 to March 2024',
   }
 ]
 
