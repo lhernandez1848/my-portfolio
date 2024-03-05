@@ -2,8 +2,11 @@ import styles from './sidebar.module.css'
 import globalStyles from '../../app.module.css'
 import Gallery from '../Gallery/Gallery'
 import { Link } from 'react-router-dom'
-import { useEffect } from 'react';
-import { useRef } from 'react';
+import { useEffect } from 'react'
+import { useRef } from 'react'
+import Container from '@mui/material/Container'
+import Typography from '@mui/material/Typography'
+import { Box } from '@mui/material'
 
 export default function Sidebar(props) {
   const data = props.data;
@@ -23,26 +26,31 @@ export default function Sidebar(props) {
     };
   }, [ref, props])
 
-  return <aside className={styles.sidebar} ref={ref}>
+  return <Container className={styles.sidebar} ref={ref} sx={{ color: (theme) =>
+    theme.palette.mode === 'light' ? '#000' : '#c4ceed', bgcolor: (theme) => theme.palette.mode === 'light' ? '#fbfcfe' : '#04070a' }}>
     <button onClick={() => props.callback(false)} className={styles.sidebarCloseButton} title='close'>&#129106;</button>
     <section>
-      <h4 className={styles.sidebarTitle}>{data.title}</h4>
+      <Typography className={styles.sidebarTitle} component="h4" variant="h4" >
+        {data.title}
+      </Typography>
       <Gallery images={data.images} />
       <article className={styles.sidebarDescription}>
         {data.description.map((item, i) => {
-          return <p key={i}>{item}</p>
+          return <Typography component="p" variant="body1" key={i}>{item}</Typography>
         })}
       </article>
       {data.link &&
         <Link to={data.link} className={globalStyles.linkWithIcon} target='_blank' rel='noopener noreferrer'>{data.linkTitle} <div className={styles.linkIcon}>&#129125;</div></Link >
       }
       <br />
-      <p>Technologies used:</p>
+      <Typography component="p" variant="p">Technologies used:</Typography>
       {data.stack &&
         <ul className={styles.projectStack}>
-          {data.stack.map((e, i) => <li key={i}>{e}</li>)}
+          {data.stack.map((e, i) => <li key={i}><Box className={styles.stackItem} sx={{ 
+            bgcolor: (theme) => theme.palette.mode === 'light' ? '#55a6f64d' : '#121820' 
+          }}>{e}</Box></li>)}
         </ul>
       }   
     </section>
-  </aside>    
+  </Container>
 }

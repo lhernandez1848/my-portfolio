@@ -7,7 +7,7 @@ export default function ProjectsSvg() {
         <rect width="302" height="341"/>
       </clipPath>
     </defs>
-    <g id="projects" clipPath="url(#clip-projects)">
+    <g clipPath="url(#clip-projects)">
       <g id="Group_3" data-name="Group 3" transform="translate(-15.5 -5.75)">
         <path id="Path_56" data-name="Path 56" d="M1908.418,334.985h-220v-300h220V166.922" transform="translate(-1661.918 0.765)" fill="none" stroke="#317c9c" strokeLinecap="round" strokeLinejoin="round" strokeWidth="20"/>
         <path id="Exclusion_1" className={styles.fruitPathSpecialFill} data-name="Exclusion 1" d="M70,140A70.018,70.018,0,0,1,42.753,5.5a70.018,70.018,0,0,1,54.494,129A69.561,69.561,0,0,1,70,140ZM34.019,66.037a7.587,7.587,0,0,0-5.711,2.672,9.992,9.992,0,0,0,0,12.9l20.56,23.228a7.588,7.588,0,0,0,5.712,2.674c.19,0,.382-.008.571-.023.193.015.385.022.571.022a7.585,7.585,0,0,0,5.711-2.673l50.26-56.779a9.995,9.995,0,0,0,0-12.9,7.439,7.439,0,0,0-11.422,0L55.151,86.13,39.731,68.709A7.589,7.589,0,0,0,34.019,66.037Z" transform="translate(176.5 205.5)" fill="#317c9c"/>

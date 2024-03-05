@@ -1,20 +1,21 @@
 export const experience = [
   {
-    name: 'Front-end Developer',
+    name: 'FRONT-END DEVELOPER',
+    tabName: 'FRONT-END DEVELOPER',
     location: 'Periculum',
     startYear: '2021',
     timeFrame: 'September 2021 to May 2023',
     list: [
-      'Implemented user interfaces for various company platforms including Insights; a data-driven analytic and credit scoring engine that predict customer financial standing.',
-      'Debugged and developed projects from initial design through completion, improving for cross-browser compatibility and responsive layout.',
+      'Implemented user interfaces for various company platforms, consuming RESTful APIs and ensuring cross-browser usability.',
+      'Debugged and developed projects from initial design through completion, improving accessibility and responsive layout.',
       'Collaborated with back-end developers, designers, and data analysts in daily scrum meetings in order to implement new features, and meet project requirements.',
-      'Streamlined frontend development process and improved code efficiency by writing unit tests with Jest and React Testing Libraries.',
-      'Managed and implemented company website using WebFlow, working closely with designers and product team. This increased mobile and traffic and provided a better user experience.'
+      'Managed and implemented company website using WebFlow, working closely with designers and product team.'
     ]
   },
   {
-    name: 'UX/UI Designer',
-    location: 'Digital Main Street',
+    name: 'UX/UI DESIGNER',
+    tabName: 'UX/UI DESIGNER',
+    location: 'COMMUNITECH',
     startYear: '2021',
     timeFrame: 'March 2021 to June 2021',
     list: [
@@ -27,20 +28,31 @@ export const experience = [
 
 export const education = [
   {
-    name: 'Computer Programmer / Analyst',
+    name: 'COMPUTER PROGRAMMER / ANALYST',
+    tabName: 'COMPUTER PROGRAMMER',
     location: 'Conestoga College',
     startYear: '2017',
     timeFrame: 'September 2017 to April 2020',
     list: [
+      'Three-year advanced diploma',
+      'Learned through a combination of theory and practice, applied knowledge to hands-on assignments and challenging projects',
       'Awarded Graduation with Distinction',
-      'Dean’s List 2020'
+      'Dean’s List 2020',
+      'GPA: 3.77'
     ]
   },
   {
     name: 'GOOGLE UX DESIGN PROFESSIONAL CERTIFICATE',
+    tabName: 'UX DESIGN',
     location: 'Coursera',
     startYear: '2024',
     timeFrame: 'January 2024 to March 2024',
+    list: [
+      'Professional-level training from Google for entry level job rediness',
+      'Design process: empathized with users, defined pain points, ideated solutions, created wireframes and prototypes',
+      'Applied foundational UX concepts; user-centered design, accessibility, and equity-focused design',
+      'Learned the basics of UX research; planning research studies, conducting interviews and usability studies, and synthesizing research results'
+    ]
   }
 ]
 

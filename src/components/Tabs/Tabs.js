@@ -9,7 +9,7 @@ export default function Tab(props) {
     <ul className={styles.tabList}>
       {props.tabs &&
         props.tabs.map((tab, index) => {
-          return <li key={index} className={tabIndex === index ? styles.activeTab : styles.inactiveTab} onClick={() => setTabIndex(index)}>{tab.name}</li>
+          return <li key={index} className={tabIndex === index ? styles.activeTab : styles.inactiveTab} onClick={() => setTabIndex(index)}>{tab.tabName}</li>
         })
       }
     </ul>

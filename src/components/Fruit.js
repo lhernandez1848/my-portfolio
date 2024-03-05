@@ -1,14 +1,27 @@
-import { Link } from 'react-router-dom';
-import styles from './components.module.css';
+import styles from './components.module.css'
+import Typography from '@mui/material/Typography'
 
 export default function Fruit(props) {
-  const innerContent = <>
-    {props.image}
-    <h3 className={styles.fruitTitle}>{props.title}</h3>
-  </>
-  const content = props.link 
-    ? <Link to={props.link} className={styles.fruit} style={props.style}>{innerContent}</Link >
-    : <button className={styles.fruit} style={props.style} onClick={() => props.modalCallback()}>{innerContent}</button>
+  const scrollToSection = (sectionId) => {
+    const sectionElement = document.getElementById(sectionId);
+    const offset = 128;
+    
+    if (sectionElement) {
+      const targetScroll = sectionElement.offsetTop - offset;
+      sectionElement.scrollIntoView({ behavior: 'smooth' });
+      window.scrollTo({
+        top: targetScroll,
+        behavior: 'smooth',
+      });
+    }
+  };
 
-  return content;
+  return <button className={styles.fruit} style={props.style} onClick={() => scrollToSection(props.section)}>
+    {props.image}
+    <Typography className={styles.fruitTitle}
+      component="h3" variant="h3"
+      sx={{ color: (theme) => theme.palette.mode === 'light' ? 'primary.main' : '#e2fdf6' }}> 
+      {props.title}
+    </Typography>
+  </button>
 }

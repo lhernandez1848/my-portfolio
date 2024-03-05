@@ -7,7 +7,7 @@ export default function ResumeSvg() {
         <rect width="243" height="323"/>
       </clipPath>
     </defs>
-    <g id="resume" clipPath="url(#clip-resume)">
+    <g clipPath="url(#clip-resume)">
       <path id="Path_56" data-name="Path 56" d="M1908.418,334.985h-220v-300h220v300" transform="translate(-1676.418 -22.985)" fill="none" stroke="#317c9c" strokeLinecap="round" strokeLinejoin="round" strokeWidth="20"/>
       <rect id="Rectangle_30" data-name="Rectangle 30" width="149" height="16" rx="8" transform="translate(47.5 165.5)" fill="#317c9c"/>
       <g id="Group_5" data-name="Group 5" transform="translate(77.937 43)">
