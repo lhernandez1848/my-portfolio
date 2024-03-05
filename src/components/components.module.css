@@ -74,30 +74,6 @@
   z-index: 4;
 }
 
-/* Logo Images */
-/* .logoImages {
-  width: 2em;
-} */
-
-/* Header */
-.header {
-  display: flex;
-  align-items: center;
-  padding: 2em 0;
-}
-
-.header h2 {
-  font-size: 2em;
-  text-align: start;
-  color: #c4ceed;
-}
-
-.headerLine {
-  background-color: #233554;
-  height: 1px;
-  margin: 0 0 0 2em;
-}
-
 /* TABS */
 .tabMain {
   display: flex;

@@ -5,7 +5,6 @@ import Footer from '../components/Footer/Footer'
 import About from './About/About'
 import Resume from './Resume/Resume'
 
-import styles from '../components/components.module.css'
 import { useState } from 'react'
 import PropTypes from 'prop-types'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
@@ -67,7 +66,7 @@ export default function Home() {
     setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
   };
 
-  return <ThemeProvider theme={LPtheme} className={styles.componentMain}>
+  return <ThemeProvider theme={LPtheme}>
     <CssBaseline />
     <ColorMode mode={mode} toggleColorMode={toggleColorMode} />
     <Hero />

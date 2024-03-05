@@ -1,4 +1,5 @@
 import firebase from 'firebase';
+import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAW8DBy4AsXZOSSOzvLJEC0S92xRYpMWVs",
@@ -12,5 +13,8 @@ const firebaseConfig = {
 };
 
 const app = firebase.initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+logEvent(analytics, 'notification_received');
+
 export const db = app.database();
 export default firebase;
