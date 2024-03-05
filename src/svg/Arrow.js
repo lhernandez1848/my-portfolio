@@ -6,8 +6,8 @@ export default function Arrow() {
   <path d="M11.7224 6H10.6698V10.5778H6L10.2748 15.7333H6L11.1962 22L16.3923 15.7333H12.1175L16.3923 10.5778H11.7224V6Z" fill="#317C9C"/>
   </g>
   <defs>
-  <filter id="filter0_d_131_2" x="0" y="0" width="22.3923" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+  <filter id="filter0_d_131_2" x="0" y="0" width="22.3923" height="28" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
   <feOffset/>
   <feGaussianBlur stdDeviation="3"/>
