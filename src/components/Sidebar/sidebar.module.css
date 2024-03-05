@@ -1,8 +1,8 @@
 .sidebar {
-  width: 500px;
+  width: 500px !important;
   height: 100vh;
   overflow-y: auto;
-  z-index: 4;
+  z-index: 1101;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
@@ -12,7 +12,6 @@
   right: 0;
   background: #04070a;
   border-left: 1px solid rgba(54, 74, 96, 0.3);
-  color: #c4ceed;
   line-height: 1.5em;
   font-size: 0.875rem;
   letter-spacing: 3px;
@@ -22,17 +21,17 @@
 .sidebarCloseButton {
   background-color: transparent;
   border: none;
-  color: #c4ceed;
   text-align: start;
   font-size: 1.2rem;
   cursor: pointer;
   font-weight: 700;
   margin-bottom: 1em;
+  color: #0959aa;
 }
 
 .sidebarTitle {
-  font-size: 1.125rem;
-  margin-bottom: 1em;
+  font-size: 1.125rem !important;
+  margin-bottom: 1em !important;
 }
 
 .sidebarDescription {
@@ -44,15 +43,13 @@
   flex-direction: row;
   gap: 1em;
   list-style: none;
-  color: #c4ceed;
   margin: 2em 0 0 0;
   font-size: .8rem;
 }
 
-.projectStack li {
+.projectStack li .stackItem {
   padding: .75rem;
   border-radius: 2rem;
-  background-color: #121820;
 }
 
 @media only screen and (max-width: 700px) {

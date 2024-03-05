@@ -1,21 +1,7 @@
 .projectSection {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4em;
-  width: 100%;  
-  padding: 2em;
-  background: #0B111A;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(54, 74, 96, 0.3);
-}
-
-.projectCard {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 250px;
+  max-width: 100% !important;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
 }
 
 .projectImage {
@@ -42,9 +28,8 @@
 }
 
 .projectTitle {
-  color: #c4ceed;
-  margin: 0 0 1.5em 0;
-  font-size: 1.125rem;
+  margin: 0 0 1.5em 0 !important;
+  font-size: 1.125rem !important;
   letter-spacing: 2px;
 }
 
@@ -62,4 +47,10 @@
   padding: .75rem;
   border-radius: 2rem;
   background-color: #121820;
+}
+
+.illustartionImage {
+  flex: 1 1 250px;
+  max-width: 250px;
+  height: 20%;
 }
