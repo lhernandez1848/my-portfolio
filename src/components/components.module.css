@@ -5,7 +5,7 @@
   background-color: #e2fdf6;
   width: 5em;
   height: 5em;
-  box-shadow: 0 0 16px 8px #2a6f97;
+  box-shadow: 0 0 16px 8px #006494;
   position: absolute;
   display: flex;
   align-items: center;
@@ -61,7 +61,7 @@
 
 .fruit:hover {
   border: none;
-  background-color: #084774;
+  background-color: #0959AA;
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
