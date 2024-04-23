@@ -1,0 +1,47 @@
+.about {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.aboutImage {
+  width: 90%;
+}
+
+.about-greeting {
+  margin: 0 0 .5em 0;
+  font-weight: 900;
+}
+
+.about-par {
+  text-align: start;
+  margin: 0 0 2em 0;
+}
+
+.twoColList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 1100px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+
+  .aboutImage {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .about-greeting {
+    margin: 1em 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutImage {
+    width: 100%;
+  } 
+}

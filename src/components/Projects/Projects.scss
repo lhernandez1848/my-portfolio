@@ -1,0 +1,79 @@
+@import './../../App.scss';
+
+.project-section {
+  width: 100%;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  margin: 2em 0;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4em;
+}
+
+.project-card:nth-child(even) .project-images-container {
+  order: 1;
+}
+
+.project-images-container {
+  height: 50vh;
+}
+
+.projectDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 2em;
+  background-color: var(--toggle-bg);
+}
+
+.projectDescription {
+  line-height: 1.6em;
+  font-size: 0.875rem;
+  letter-spacing: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.projectTitle {
+  margin: 0 0 1.5em 0 !important;
+  letter-spacing: 2px;
+}
+
+.projectStack {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  list-style: none;
+  color: #c4ceed;
+  margin: 2em 0 0 0;
+  font-size: .8rem;
+}
+
+.projectStack li {
+  padding: .75rem;
+  border-radius: 2rem;
+  background-color: #121820;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .project-card:nth-child(even) .project-images-container {
+    order: unset;
+  }
+}
