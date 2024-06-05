@@ -1,5 +1,6 @@
 :root {
-  --background: linear-gradient(#b2daff 0%, rgb(255, 255, 255) 20%);
+  --background: #fff;
+  --bacground-gradient: linear-gradient(#b2daff 0%, rgba(255, 255, 255, 0) 100%);
   --primary-color: #03273c;
   --secondary-color: #91b7db;
   --primary-text-color: #0a0a0a;
@@ -15,11 +16,12 @@
 }
 
 [data-theme="dark"] {
-  --background: linear-gradient(rgb(2, 41, 79), rgb(9, 14, 16) 20%);
+  --background: rgb(9, 14, 16);
+  --bacground-gradient: linear-gradient(rgb(2, 41, 79), rgba(9, 14, 16, 0) 100%);
   --primary-color: #00a6fb;
   --secondary-color: #014188;
   --primary-text-color: #f6f6f6;
-  --secondary-text-color: #00a6fb;
+  --secondary-text-color: #57a3c9;
   --toggle-bg: #283452;
   --toggle-fg: #00a6ff;
   --fruit-color: #317C9C;

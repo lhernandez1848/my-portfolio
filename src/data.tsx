@@ -1,5 +1,4 @@
 import About from "./components/About/About"
-import Projects from "./components/Projects/Projects"
 import Resume from "./components/Resume/Resume"
 import AboutSvg from "./svg/About"
 import ProjectsSvg from "./svg/Projects"
@@ -9,21 +8,18 @@ export const FRUITS = [
   {
     style: { top: '40%', left: 'calc(50% - 32em)' },
     title: 'Projects',
-    section: 'projects',
-    image: <ProjectsSvg />,
-    element: <Projects />
+    link: '/projects',
+    image: <ProjectsSvg />
   },
   {
     style: { top: '5%', left: '50%' },
     title: 'Resume',
-    section: 'resume',
     image: <ResumeSvg />,
     element: <Resume />
   },
   {
     style: { top: '32%', left: 'calc(50% + 27em)' },
     title: 'About Me',
-    section: 'about',
     image: <AboutSvg />,
     element: <About />
   }

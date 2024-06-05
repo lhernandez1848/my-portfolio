@@ -1,7 +1,8 @@
+@import './../../App.scss';
+
 .footer {
-  position: absolute;
   bottom: 0;
-  padding: 1em;
+  padding: 1em 4em 1em 1em;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -11,4 +12,8 @@
 .footerLinkImage {
   width: 28px;
   height: 28px;
+}
+
+[data-theme="light"] .footerLinkImage {
+  filter: brightness(20%);
 }
