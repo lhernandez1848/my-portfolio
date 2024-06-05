@@ -1,6 +1,11 @@
 import './List.scss'
 
-export default function List(props: { listItems: any, class: string }) {
+type ListProps = {
+  listItems: any,
+  class: string
+}
+
+export default function List(props: ListProps) {
   const listItems = props.listItems;
 
   return <ul className={`${'unordered-list'} ${props.class}`}>

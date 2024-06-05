@@ -11,3 +11,9 @@ $myFontSize: 100%;
   font-family: $myFont;
   font-size: $myFontSize;
 }
+
+html, body, #root {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}

@@ -1,6 +1,11 @@
 import "./Toggle.scss"
 
-export default function Toggle(props: { isChecked: boolean, handleChange: () => void}) {
+type ToggleProps = {
+  isChecked: boolean,
+  handleChange: () => void
+}
+
+export default function Toggle(props: ToggleProps) {
   return (
     <div className='toggle-container'>
       <button onClick={props.handleChange} className='toggle-button'>
