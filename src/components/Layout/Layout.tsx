@@ -1,7 +1,7 @@
 import { ReactNode, useState } from 'react'
 import './Layout.scss'
-import Toggle from '../components/Toggle/Toggle'
-import Menu from './Menu/Menu'
+import Toggle from '../Toggle/Toggle'
+import Menu from '../Menu/Menu'
 
 type LayoutProps = {
   children: ReactNode,
@@ -9,9 +9,8 @@ type LayoutProps = {
 }
 
 export default function Layout(props: LayoutProps) {
-  const preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const localPref = localStorage.getItem("isDark");
-  const [isDark, setIsDark] = useState(localPref === 'true' ? true : preference)
+  const [isDark, setIsDark] = useState(localPref === 'false' ? false : true)
 
   return <main  className='main' data-theme={isDark ? "dark" : "light"}>
     <nav className='navbar'>
