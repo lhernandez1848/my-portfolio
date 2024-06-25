@@ -1,4 +1,4 @@
-import Layout from '../../components/Layout'
+import Layout from '../../components/Layout/Layout'
 import ProjectContainer from './ProjectContainer'
 import { PROJECTS } from '../../data'
 import './Projects.scss'

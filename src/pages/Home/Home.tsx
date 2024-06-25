@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './Home.scss'
-import FallingArrow from '../components/FallingArrow/FallingArrow'
-import Tree from '../svg/Tree'
-import { FRUITS } from '../data'
-import Fruit from '../components/Fruit/Fruit'
-import Modal from '../components/Modal/Modal'
-import Footer from '../components/Footer/Footer'
-import Layout from '../components/Layout'
+import FallingArrow from '../../components/FallingArrow/FallingArrow'
+import Tree from '../../svg/Tree'
+import { FRUITS } from '../../data'
+import Fruit from '../../components/Fruit/Fruit'
+import Modal from '../../components/Modal/Modal'
+import Footer from '../../components/Footer/Footer'
+import Layout from '../../components/Layout/Layout'
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState({ state: false, index: 0 });
