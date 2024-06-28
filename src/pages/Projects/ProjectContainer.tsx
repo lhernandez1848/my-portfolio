@@ -3,6 +3,7 @@ import Gallery from '../../components/Gallery/Gallery';
 import List from '../../components/List/List';
 import './Projects.scss'
 import Modal from '../../components/Modal/Modal';
+import { Link } from 'react-router-dom';
 
 type ProjectProps = {
   data: any
@@ -29,6 +30,7 @@ export default function ProjectContainer(props: ProjectProps) {
         <br />
         <h6>Stack used:</h6>
         <List listItems={data.stack} class={'list-row-simple'} />
+        <Link to={data.link} target='_blank' rel='noreferrer noopener'>{data.linkTitle}</Link>
       </div>
     </div>
   </div>
