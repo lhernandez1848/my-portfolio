@@ -1,0 +1,48 @@
+@import './../../App.scss';
+
+.unordered-list {
+  list-style-type: none;
+  margin: 1em 0;
+}
+
+.unordered-list li {
+  color: var(--primary-text-color);
+}
+
+.list-pill {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.list-pill li {
+  background-color: var(--toggle-bg);
+  padding: .5em 1em;
+  border-radius: 50px;
+}
+
+.list-row-simple {
+  display: flex;
+  gap: 2em;
+  margin: 0;
+}
+
+.list-resume {
+  list-style-type: square;
+  margin: 1em 0 1em 1em;
+  width: 90%;
+}
+
+.list-resume li:not(:first-child) {
+  margin: 1em 0 0 0;
+}
+
+.list-resume li::marker {
+  color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 1400px) {
+  .list-resume {
+    width: 100%;
+  }
+}

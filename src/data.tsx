@@ -1,14 +1,42 @@
+import About from "./components/About/About"
+import Resume from "./components/Resume/Resume"
+import AboutSvg from "./svg/About"
+import ProjectsSvg from "./svg/Projects"
+import ResumeSvg from "./svg/Resume"
+
+export const FRUITS = [
+  {
+    style: { top: '40%', left: 'calc(50% - 32em)' },
+    title: 'Projects',
+    link: '/projects',
+    image: <ProjectsSvg />
+  },
+  {
+    style: { top: '5%', left: '50%' },
+    title: 'Resume',
+    image: <ResumeSvg />,
+    element: <Resume />
+  },
+  {
+    style: { top: '32%', left: 'calc(50% + 27em)' },
+    title: 'About Me',
+    image: <AboutSvg />,
+    element: <About />
+  }
+]
+
 export const EXPERIENCE = [
   {
     name: 'FRONT-END DEVELOPER',
     tabName: 'FRONT-END DEVELOPER',
     location: 'Periculum',
     startYear: '2021',
-    timeFrame: 'Sept 2021 - May 2023',
+    timeFrame: 'September 2021 to May 2023',
     list: [
       'Implemented user interfaces for various company platforms, consuming RESTful APIs and ensuring cross-browser usability.',
       'Debugged and developed projects from initial design through completion, improving accessibility and responsive layout.',
-      'Collaborated with back-end developers, designers, and data analysts in daily scrum meetings in order to implement new features, and meet project requirements.'
+      'Collaborated with back-end developers, designers, and data analysts in daily scrum meetings in order to implement new features, and meet project requirements.',
+      'Managed and implemented company website using WebFlow, working closely with designers and product team.'
     ]
   },
   {
@@ -16,7 +44,7 @@ export const EXPERIENCE = [
     tabName: 'UX/UI DESIGNER',
     location: 'COMMUNITECH',
     startYear: '2021',
-    timeFrame: 'March 2021 - June 2021',
+    timeFrame: 'March 2021 to June 2021',
     list: [
       'Part of a diverse team made up of a Digital Marketer, Graphic Designer, Web Developer and Copywriter',
       'Redesigned web platform for 10+ small businesses, resulting in an increase in their online sales and providing essential support during COVID-19 pandemic.',
@@ -31,11 +59,12 @@ export const EDUCATION = [
     tabName: 'COMPUTER PROGRAMMER',
     location: 'Conestoga College',
     startYear: '2017',
-    timeFrame: 'Sept 2017 - April 2020',
+    timeFrame: 'September 2017 to April 2020',
     list: [
       'Three-year advanced diploma',
       'Learned through a combination of theory and practice, applied knowledge to hands-on assignments and challenging projects',
       'Awarded Graduation with Distinction',
+      'Dean’s List 2020',
       'GPA: 3.77'
     ]
   },
@@ -44,9 +73,10 @@ export const EDUCATION = [
     tabName: 'UX DESIGN',
     location: 'Coursera',
     startYear: '2024',
-    timeFrame: 'Jan 2024 - March 2024',
+    timeFrame: 'January 2024 to March 2024',
     list: [
       'Professional-level training from Google for entry level job rediness',
+      'Design process: empathized with users, defined pain points, ideated solutions, created wireframes and prototypes',
       'Applied foundational UX concepts; user-centered design, accessibility, and equity-focused design',
       'Learned the basics of UX research; planning research studies, conducting interviews and usability studies, and synthesizing research results'
     ]
@@ -56,7 +86,6 @@ export const EDUCATION = [
 export const PROJECTS = [
   {
     title: 'Insights',
-    role: 'Front-End Developer',
     stack: ['React', 'Redux', 'Auth0'],
     shortDescription: 'Insights is a data-driven analytics and credit scoring engine that provides predictive insights into customer’s financial standing',
     description: ['Insights is a data-driven analytics and credit scoring engine that provides predictive insights into customer’s financial standing. From the Home page, a user can upload a bank statement, and, once processed, can view it’s Analytics, Credit Scoring, Affordability, etc.'],
@@ -65,7 +94,6 @@ export const PROJECTS = [
   },
   {
     title: 'IVY',
-    role: 'Front-End Developer',
     stack: ['Android Studio', 'Java', 'NodeJS'],
     shortDescription: 'IVY is a mobile application that provides main inventory functions',
     description: ['IVY is a mobile application that provides main inventory functions. This app was developed as part of the Capstone graduation project. Our team of three was asked to make this project for the client company, Huex Inc.'],
@@ -76,7 +104,6 @@ export const PROJECTS = [
   },
   {
     title: 'Avaanz Website',
-    role: 'UX/UI Designer',
     stack: ['Squarespace', 'Javascript', 'AdobeXD'],
     shortDescription: 'Avaanz Ltd. is a human environment consulting firm',
     description: ['Avaanz Ltd. is a human environment consulting firm. This website was my first project at Digital Main Street, and as a recent graduate. As a team, we designed and implemented this site from the ground up based on the client’s needs.'],

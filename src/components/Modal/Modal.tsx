@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useEffect } from 'react'
 import './Modal.scss'
 import { useRef } from 'react'
@@ -26,12 +24,12 @@ export default function Modal(props: ModalProps) {
     };
   }, [ref])
 
-  return <div className='modal-overlay'>
+  return <section className='modal-overlay'>
     <div className='modal' ref={ref}>
       <button onClick={() => props.callback()} className='close-button'><img src='/assets/close.svg' alt='close' /></button>
       <div className='modal-content'>
         {props.element}
       </div>      
     </div>    
-  </div>
+  </section>
 }

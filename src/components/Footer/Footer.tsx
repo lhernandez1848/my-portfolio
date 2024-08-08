@@ -1,19 +1,13 @@
-import Link from 'next/link'
 import './Footer.scss'
-import github from '../../../public/assets/github-mark.png'
-import linkedin from '../../../public/assets/linkedin.png'
+import { Link } from 'react-router-dom'
 
-export default function Footer() {
-  return (
-    <footer className='footer'>
-      <div className='email-container'>
-        <h5>Email</h5>
-        <Link href='mailto:lisdanayhernandez@outlook.com' target='_blank' rel='noopener norefferer'>lisdanayhernandez@outlook.com</Link>
-      </div>
-      <div className='footer-links-container'>
-        <Link href={'https://github.com/lhernandez1848'} target='_blank' rel='noreferrer noopener'><img src={github.src} alt='Github logo' /></Link>
-        <Link href={'https://www.linkedin.com/in/lisdanay-hernandez'} target='_blank' rel='noreferrer noopener'><img src={linkedin.src} alt='LinkedIn logo'/></Link>
-      </div>
-    </footer>
-  );
+export default function Footer(props: { isHome?: boolean }) {
+  return <footer className='footer' style={{ position: props.isHome ? 'fixed' : 'relative' }}>
+    <Link to='https://www.linkedin.com/in/lisdanay-hernandez' className='footerLink' target='_blank' rel='noopener noreferrer'>
+      <img src='/assets/LI-In-Bug.png' alt='LinkedIn logo' className='footerLinkImage' />
+    </Link >
+    <Link to={'https://github.com/lhernandez1848'} className='footerLink' target='_blank' rel='noopener noreferrer'>
+      <img src='/assets/github-mark-white.png' alt='GitHub logo' className='footerLinkImage' />
+    </Link >
+  </footer>
 }

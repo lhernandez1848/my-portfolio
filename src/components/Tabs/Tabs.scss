@@ -1,0 +1,32 @@
+@import './../../App.scss';
+
+.tabMain {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 2em;
+}
+
+.tabList {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+}
+
+.tabList li {
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 5px;
+  color: var(--primary-text-color);
+}
+
+.activeTab {
+  color: var(--modal-background) !important;
+  background-color: var(--primary-color);
+}
+
+@media only screen and (max-width: 700px) {
+  .tabList {
+    flex-direction: column;
+  }
+}
