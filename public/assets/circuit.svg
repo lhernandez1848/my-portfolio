@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="800" viewBox="0 0 1280 800">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#014188"/>
+      <stop offset="0.519" stop-color="#000e1f"/>
+      <stop offset="1" stop-color="#000205" stop-opacity="0.102"/>
+    </radialGradient>
+    <filter id="Ellipse_22" x="85.406" y="168.921" width="69.004" height="73" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#80d2f5"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_22-2" x="85.406" y="168.921" width="69.004" height="73" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#6198af" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_22-3" x="0.685" y="64.449" width="69.004" height="73" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur-3"/>
+      <feFlood flood-color="#80d2f5"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_22-4" x="0.685" y="64.449" width="69.004" height="73" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-color="#6198af" result="color-2"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-4"/>
+      <feComposite operator="in" in="color-2"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-circuit">
+      <rect width="1280" height="800"/>
+    </clipPath>
+  </defs>
+  <g id="circuit" clip-path="url(#clip-circuit)">
+    <circle id="Ellipse_67" data-name="Ellipse 67" cx="400" cy="400" r="400" transform="translate(-371 -368)" fill="url(#radial-gradient)"/>
+    <path id="Path_6" data-name="Path 6" d="M532.94,833.745l16.624-15.517V567.208l70.094-51.669" transform="translate(-507.793 -303.641)" fill="none" stroke="#317c9c" stroke-width="3"/>
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_22)">
+        <ellipse id="Ellipse_22-5" data-name="Ellipse 22" cx="10.502" cy="12.5" rx="10.502" ry="12.5" transform="translate(109.41 192.92)" fill="#317c9c"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_22-2)">
+        <ellipse id="Ellipse_22-6" data-name="Ellipse 22" cx="10.502" cy="12.5" rx="10.502" ry="12.5" transform="translate(109.41 192.92)" fill="#fff"/>
+      </g>
+    </g>
+    <path id="Path_16" data-name="Path 16" d="M571.85,873.421V437.991l45.208-40.4" transform="translate(-521.654 -59.82)" fill="none" stroke="#317c9c" stroke-width="3"/>
+    <g id="Ellipse_61" data-name="Ellipse 61" transform="translate(93 322)" fill="none" stroke="#317c9c" stroke-width="3">
+      <ellipse cx="8.5" cy="10" rx="8.5" ry="10" stroke="none"/>
+      <ellipse cx="8.5" cy="10" rx="7" ry="8.5" fill="none"/>
+    </g>
+    <path id="Path_28" data-name="Path 28" d="M612.388,359.27l-7.118-8.362v-222.8" transform="translate(-570.353 -21.5)" fill="none" stroke="#317c9c" stroke-width="3"/>
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_22-3)">
+        <ellipse id="Ellipse_22-7" data-name="Ellipse 22" cx="10.502" cy="12.5" rx="10.502" ry="12.5" transform="translate(24.68 88.45)" fill="#317c9c"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_22-4)">
+        <ellipse id="Ellipse_22-8" data-name="Ellipse 22" cx="10.502" cy="12.5" rx="10.502" ry="12.5" transform="translate(24.68 88.45)" fill="#fff"/>
+      </g>
+    </g>
+    <path id="Path_15" data-name="Path 15" d="M665.884,855.844H685.64l9.274,20.44" transform="translate(-593.414 -614.641)" fill="none" stroke="#317c9c" stroke-width="3"/>
+    <ellipse id="Ellipse_11" data-name="Ellipse 11" cx="11.342" cy="13.5" rx="11.342" ry="13.5" transform="translate(93 253)" fill="#317c9c"/>
+    <path id="Path_55" data-name="Path 55" d="M287.782,1276.663V772.369" transform="translate(-262.404 -471.691)" fill="none" stroke="#317c9c" stroke-width="3"/>
+    <path id="Path_61" data-name="Path 61" d="M330.67,822.478V529.918l9.959-11.987V200.345" transform="translate(-322.203 -17.877)" fill="none" stroke="#317c9c" stroke-width="3"/>
+    <ellipse id="Ellipse_69" data-name="Ellipse 69" cx="11.342" cy="13.5" rx="11.342" ry="13.5" transform="translate(7.084 159.644)" fill="#317c9c"/>
+    <path id="Path_62" data-name="Path 62" d="M617.059,781.009V833.02l-45.208,40.4" transform="translate(-537.041 -653.231)" fill="none" stroke="#317c9c" stroke-width="3"/>
+    <g id="Rectangle_64" data-name="Rectangle 64" transform="translate(44 763)" fill="none" stroke="#317c9c" stroke-width="1" opacity="0.21">
+      <rect width="12" height="16" stroke="none"/>
+      <rect x="0.5" y="0.5" width="11" height="15" fill="none"/>
+    </g>
+    <rect id="Rectangle_69" data-name="Rectangle 69" width="24" height="25" transform="translate(15 603)" fill="#317c9c" opacity="0.21"/>
+    <g id="Rectangle_66" data-name="Rectangle 66" transform="translate(2 371)" fill="none" stroke="#317c9c" stroke-width="1" opacity="0.21">
+      <rect width="12" height="16" stroke="none"/>
+      <rect x="0.5" y="0.5" width="11" height="15" fill="none"/>
+    </g>
+    <g id="Rectangle_49" data-name="Rectangle 49" transform="translate(30 101)" fill="none" stroke="#317c9c" stroke-width="1" opacity="0.21">
+      <rect width="11" height="16" stroke="none"/>
+      <rect x="0.5" y="0.5" width="10" height="15" fill="none"/>
+    </g>
+    <rect id="Rectangle_52" data-name="Rectangle 52" width="6" height="17" transform="translate(62 9)" fill="#317c9c" opacity="0.21"/>
+    <rect id="Rectangle_55" data-name="Rectangle 55" width="11" height="25" transform="translate(23 222)" fill="#317c9c" opacity="0.21"/>
+    <rect id="Rectangle_56" data-name="Rectangle 56" width="17" height="25" transform="translate(52 303)" fill="#317c9c" opacity="0.21"/>
+    <rect id="Rectangle_61" data-name="Rectangle 61" width="11" height="11" transform="translate(34 462)" fill="#317c9c" opacity="0.21"/>
+    <rect id="Rectangle_62" data-name="Rectangle 62" width="11" height="11" transform="translate(15 547)" fill="#317c9c" opacity="0.21"/>
+    <rect id="Rectangle_65" data-name="Rectangle 65" width="7" height="17" transform="translate(29 716)" fill="#317c9c" opacity="0.21"/>
+    <!-- <circle id="Ellipse_70" data-name="Ellipse 70" cx="400" cy="400" r="400" transform="translate(800 473)" fill="url(#radial-gradient)"/> -->
+  </g>
+</svg>

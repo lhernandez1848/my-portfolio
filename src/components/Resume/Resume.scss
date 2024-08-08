@@ -1,0 +1,20 @@
+/* RESUME */
+.resume {
+  width: 100%;
+  padding: 2em 0;
+  display: grid;
+  gap: 4em;
+  grid-template-columns: 1fr 1fr;
+}
+
+.resume-tier-title {
+  margin: 0 0 2em 0;
+}
+
+@media only screen and (max-width: 1100px) {
+  .resume {
+    gap: 4em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
