@@ -1,32 +1,44 @@
-import { useState } from 'react'
+import { useEffect } from 'react';
+import Layout from '../../components/Layout/Layout';
 import './Home.scss'
-import FallingArrow from '../../components/FallingArrow/FallingArrow'
-import Tree from '../../svg/Tree'
-import { FRUITS } from '../../data'
-import Fruit from '../../components/Fruit/Fruit'
-import Modal from '../../components/Modal/Modal'
-import Footer from '../../components/Footer/Footer'
-import Layout from '../../components/Layout/Layout'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState({ state: false, index: 0 });
-  
+  useEffect(() => {
+    document.title = 'Lisdanay Hernandez - Portfolio';
+  }, [])
+
   return (
-    <Layout isHome={true} >
-      {isOpen.state && 
-        <Modal element={FRUITS[isOpen.index].element} callback={() => setIsOpen({ state: false, index: 0 })} />
-      }
-      <div className='treeBg'>
-        <FallingArrow number={10} />
-        <Tree />
-        <div className='fruitContainer'>
-          {FRUITS.map((el, i) => {
-            return <Fruit key={i} style={el.style} title={el.title} image={el.image} index={i} link={el.link}
-            callback={(state: boolean, index: number) => setIsOpen({ state: state, index: index })} />
-          })}
-        </div>
-      </div>
-      <Footer isHome={true} />
-    </Layout>
-  )
+    <Layout>
+      <main className='home-main'>
+        <section>
+          <div className='profile-container card_lh'>
+            <div className='profile-main'>
+              <img src={'/assets/lisdanay.png'} alt='A headshot of Lis Hernandez' />
+              <h3 className=''>Lisdanay Hernandez</h3>
+              <span className='text-divider'></span>
+              <p className='text-spacing-min'>FRONT-END DEVELOPER</p>
+            </div>
+            <div className='profile-footer'>
+              <Link to={'https://github.com/lhernandez1848'} target='_blank' rel='noreferrer noopener'><img src={'/assets/github-mark.png'} alt='Github logo' /></Link>
+              <Link to={'https://www.linkedin.com/in/lisdanay-hernandez'} target='_blank' rel='noreferrer noopener'><img src={'/assets/linkedin.png'} alt='LinkedIn logo'/></Link>
+            </div>
+          </div>
+          <div className='description-container'>
+            <div>
+              <h1 className=''>Hello</h1>
+              <p className='text-size-large'>Get to know me & what I do</p>
+            </div>          
+            <div className='decription-buttons'>
+              <Link to={'/resume'} className='btn-pill btn-colour'>RESUME</Link>
+              <Link to={'/projects'} className='btn-pill'>PROJECTS</Link>
+            </div>
+            <p className='text-spacing-min'>
+            I'm a Front-end Developer based in Kitchener, Ontario. With over 2 years of experience in designing, developing and maintaining web applications, I am looking to leverage my skills to produce applications that exceed user expectations.
+            </p>
+          </div>
+        </section>
+      </main>
+    </Layout>    
+  );
 }
