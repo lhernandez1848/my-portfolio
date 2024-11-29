@@ -1,15 +1,16 @@
-import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home/Home'
-import './App.scss'
-import Projects from './pages/Projects/page'
-import Resume from './pages/Resume/page'
+import { Route, Routes } from 'react-router-dom';
+import './App.scss';
+import './css/colors.scss';
+import Home from './pages/Home';
+import Resume from './pages/Resume';
+import Projects from './pages/Projects';
 
 export default function App() {
   return (
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='/projects' element={<Projects />} /> 
       <Route path='/resume' element={<Resume />} />
+      <Route path='/projects' element={<Projects />} />
     </Routes>
   );
 }
