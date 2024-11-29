@@ -11,6 +11,9 @@
   display: flex;
   flex-direction: column;
   gap: .5em;
+  a {
+    word-break: break-all;
+  }
 }
 
 .footer-links-container {

@@ -1,20 +1,22 @@
-import { Link } from 'react-router-dom'
 import '../css/footer.scss'
+import { ABOUT } from '../lib/data';
+import CustomLink from './Link'
+import H5 from './Text/H5';
 
 export default function Footer() {
   return (
     <footer className='footer'>
       <div className='email-container'>
-        <h5>Email</h5>
-        <Link to='mailto:lisdanayhernandez@outlook.com' target='_blank' rel='noopener norefferer'>lisdanayhernandez@outlook.com</Link>
+        <H5 title='Email'/>
+        <CustomLink link={`mailto:${ABOUT.email}`} target='_blank' rel='noopener norefferer'>{ABOUT.email}</CustomLink>
       </div>
       <div className='footer-links-container'>
-        <Link to={'https://github.com/lhernandez1848'} target='_blank' rel='noreferrer noopener'>
+        <CustomLink link={'https://github.com/lhernandez1848'} target='_blank' rel='noreferrer noopener'>
           <img src={'/assets/github-mark.png'} alt='Github logo' className="link-icons" />
-        </Link>
-        <Link to={'https://www.linkedin.com/in/lisdanay-hernandez'} target='_blank' rel='noreferrer noopener'>
+        </CustomLink>
+        <CustomLink link={'https://www.linkedin.com/in/lisdanay-hernandez'} target='_blank' rel='noreferrer noopener'>
           <img src={'/assets/linkedin.png'} alt='LinkedIn logo' className="link-icons"/>
-        </Link>
+        </CustomLink>
       </div>
     </footer>
   );
