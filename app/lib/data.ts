@@ -42,6 +42,14 @@ export const EDUCATION = [
       'Awarded Graduation with Distinction',
       'GPA: 3.77'
     ]
+  },
+  {
+    name: 'BUSINESS ADMINISTRATION - ACCOUNTING',
+    location: 'Conestoga College',
+    timeFrame: 'September 2011 - April 2014',
+    list: [
+      'Three-year advanced diploma'
+    ]
   }
 ]
 
@@ -96,14 +104,14 @@ export const PROJECTS = [
     linkTitle: 'View Repository'
   },
   {
-    title: 'Avaanz Website',
-    role: 'UX/UI Designer',
-    stack: ['Squarespace', 'Javascript', 'AdobeXD'],
-    shortDescription: 'Avaanz Ltd. is a human environment consulting firm',
-    description: ['Avaanz Ltd. is a human environment consulting firm. This website was my first project at Digital Main Street, and as a recent graduate. As a team, we designed and implemented this site from the ground up based on the client’s needs.'],
-    mainImage: '/assets/avaanz.png',
-    images: ['/assets/avaanz-full.png', '/assets/avaanz-team.png', '/assets/avaanz-services.png'],
-    link: 'https://www.avaanz.ca/',
-    linkTitle: 'Visit website'
+    title: 'Plantpedia',
+    role: 'Personal Project',
+    stack: ['Android Studio', 'Java', 'AdobeXD', 'Firebase Authentication', 'Firebase Realtime Database'],
+    shortDescription: '',
+    description: ['Developed for Android OS using Java, this mobile app is designed to help the user catalog and care for their houseplants. Each user can keep track of which plants they own and their specific needs. The app will send daily notifications to remind the user of which specific plants need to be watered that day.'],
+    mainImage: '/assets/pl-group.png',
+    images: ['/assets/pl-home.png', '/assets/pl-add.png', '/assets/pl-rec.png'],
+    link: 'https://github.com/lhernandez1848/Plantpedia',
+    linkTitle: 'View Repository'
   }
 ]
