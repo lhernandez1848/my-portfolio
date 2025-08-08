@@ -4,11 +4,6 @@ export function About() {
   return (
     <div>
       <p className="pt-4 text-sm dark:text-gray-200">{ABOUT.description}</p>
-      <div className="pt-12 pb-8">
-        <button className="bg-cyan-800 hover:bg-cyan-950 text-white font-bold py-2 px-4 rounded-full">
-          Get In Touch
-        </button> 
-      </div>
       <div className="mt-6 pb-6 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-center lg:justify-start gap-6">
         {resources.map(({ href, icon, handle }, i) => (
             <a data-tippy-content={handle} key={i+href}

@@ -18,8 +18,7 @@ export default function Navbar({ handleChange, isDark }: NavProps) {
 
   const navigation = [
     { name: 'Home', href: '/', current: location.pathname === "/" ? true : false },
-    { name: 'Projects', href: '/projects', current: location.pathname === "/projects" ? true : false },
-    { name: 'Contact', href: '/contact', current: location.pathname === "/contact" ? true : false }
+    { name: 'Projects', href: '/projects', current: location.pathname === "/projects" ? true : false }
   ]
 
   const navMenu = navigation.map((item) => (

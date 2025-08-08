@@ -13,10 +13,7 @@ export const EXPERIENCE = [
     startYear: '2021',
     timeFrame: 'Sept 2021 - May 2023',
     list: [
-      'Responsible for the initial design, implementation, and continued development of the company’s main platform, integrating Chart.js and React for data visualization on dashboards.',
-      'Participated in an agile environment with daily scrum meetings to introduce new features and meet project requirements',
-      'Worked with back-end developers, designers, and data analysts to implement user interfaces for various other company platforms, consuming RESTful APIs, integrating with third-party software, and ensuring cross-browser usability',
-      'Redesigned company website with a small team of designers, resulting in an 80% increase in web traffic'
+      'Designed and developed main platform dashboards in React/Chart.js, integrated APIs, and led a website redesign that increased traffic by 80%.'
     ]
   },
   {
@@ -25,9 +22,7 @@ export const EXPERIENCE = [
     startYear: '2021',
     timeFrame: 'March 2021 - June 2021',
     list: [
-      'Redesigned web platform for 10+ small businesses, resulting in an increase in their online sales and providing essential support during COVID-19 pandemic',
-      'Part of a diverse team made up of a Digital Marketer, Graphic Designer, Web Developer and Copywriter',
-      'Collaboratively designed and implemented user-friendly websites, driving an improvement in user satisfaction.'
+      'Redesigned websites for 10+ small businesses, boosting online sales and improving user experience during the COVID-19 pandemic.'
     ]
   }
 ]
