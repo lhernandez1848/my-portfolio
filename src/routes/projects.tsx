@@ -2,8 +2,14 @@
 import ProjectCard from "../projects/projectCard";
 import { PROJECTS } from "../lib/data";
 import Body from "../components/Body";
+import { useEffect } from "react";
 
 export default function Projects() {
+  useEffect(() => {
+      document.title = "Lisdanay Hernandez - Projects";
+    }, [])
+  
+
   const projects = PROJECTS.map((el, i) => {
     return <ProjectCard key={i} data={el} />
   })

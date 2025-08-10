@@ -4,14 +4,9 @@ import Tabs from "../components/Tabs";
 import Experience from "../resume/experiense";
 import Education from "../resume/education";
 import Skills from "../resume/skills";
-import { useEffect } from "react";
 import Body from "../components/Body";
 
 export default function Home() {
-  useEffect(() => {
-    document.title = "Lisdanay Hernandez - Projects";
-  }, [])
-
   return (
     <Body>
       <div className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
