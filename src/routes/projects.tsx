@@ -16,8 +16,8 @@ export default function Projects() {
 
   return (
     <Body>
-      <div className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-4 lg:mx-auto my-32">
-        <h1 className="mb-2 text-slate-800 text-xl font-semibold dark:text-gray-200">Projects</h1>
+      <div className="max-w-4xl flex items-center h-full flex-wrap mx-4 lg:mx-auto my-32 lg:my-20">
+        <h1 className="mb-2 lg:mt-10 text-slate-800 text-xl font-semibold dark:text-gray-200">Projects</h1>
         {projects}
       </div>
     </Body>

@@ -30,7 +30,7 @@ export default function ProjectCard({ data }: ProjectContentProps ) {
           <img onClick={() => setIsOpen(true)}
             src={data.mainImage}
             alt="card-image"
-            className="h-full w-full rounded-md md:rounded-lg object-cover"
+            className="h-full w-full cursor-pointer rounded-md md:rounded-lg object-cover"
           />
         </div>
         <div className="p-6">

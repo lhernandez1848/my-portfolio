@@ -27,7 +27,7 @@ export default function Navbar({ handleChange, isDark }: NavProps) {
       href={item.href}
       aria-current={item.current ? 'page' : undefined}
       className={classNames(
-        item.current ? 'text-white bg-cyan-800 md:bg-transparent md:text-cyan-800 md:p-0 md:dark:text-cyan-500' : 'hover:bg-gray-100 md:hover:bg-transparent md:hover:text-cyan-800 md:p-0 md:dark:hover:text-cyan-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700', 'text-gray-900 rounded-sm',
+        item.current ? 'text-white bg-cyan-800 sm:bg-transparent sm:text-cyan-800 sm:p-0 sm:dark:text-cyan-500' : 'hover:bg-gray-100 sm:hover:bg-transparent sm:hover:text-cyan-800 sm:p-0 sm:dark:hover:text-cyan-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white sm:dark:hover:bg-transparent dark:border-gray-700', 'text-gray-900 rounded-sm',
       )}>{item.name}</a>
     </li>
   ))
@@ -54,7 +54,7 @@ export default function Navbar({ handleChange, isDark }: NavProps) {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">            
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                <ul className="flex flex-col p-4 sm:p-0 mt-4 font-medium rounded-lg sm:space-x-8 rtl:space-x-reverse sm:flex-row sm:mt-0 sm:border-0">
                   {navMenu}
                 </ul>
               </div>
@@ -69,7 +69,7 @@ export default function Navbar({ handleChange, isDark }: NavProps) {
       {isOpen &&
         <div className="sm:hidden" id="mobile-menu">
           <div className="space-y-1 px-2 pt-2 pb-3">
-            <ul className="flex flex-col p-2 font-medium border border-gray-100 rounded-lg bg-gray-50 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="flex flex-col p-2 font-medium border border-gray-100 rounded-lg bg-gray-50 sm:bg-white dark:bg-gray-800 sm:dark:bg-gray-900 dark:border-gray-700">
               {navMenu}
             </ul>
           </div>

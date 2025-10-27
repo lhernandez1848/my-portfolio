@@ -79,15 +79,19 @@ export const CERTIFICATIONS = [
 
 export const PROJECTS = [
   {
+    id: 1,
     title: 'Insights',
     role: 'Front-End Developer',
     stack: ['React', 'Redux', 'Auth0'],
     shortDescription: 'Insights is a data-driven analytics and credit scoring engine that provides predictive insights into customer’s financial standing',
-    description: ['Insights is a data-driven analytics and credit scoring engine that provides predictive insights into customer’s financial standing. From the Home page, a user can upload a bank statement, and, once processed, can view it’s Analytics, Credit Scoring, Affordability, etc.'],
+    description: ['Insights is a data-driven analytics and credit scoring platform that delivers predictive insights into customers’ financial health. I developed the web app from the ground up using React, Redux, and Chart.js, integrating secure user authentication and dynamic data visualizations. The platform empowers users to make informed financial decisions through intuitive dashboards and comprehensive credit scoring tools.'],
+    descriptionLong: ['Insights is a data analytics and credit scoring engine designed to help businesses evaluate customer financial standing through predictive insights. As the sole Frontend Developer, I built the application from scratch, collaborating closely with the Design team to shape both the UI and user experience.', 'The frontend was developed with React and JavaScript, with Redux handling state management and API integrations. I implemented Auth0 for secure authentication and used Chart.js and TanStack Table to build rich, interactive visualizations. Beyond development, I also contributed to the design system by creating several of the custom icons used throughout the interface.', 'This project highlights my ability to design and engineer scalable, data-focused web applications from the ground up—balancing performance, usability, and visual clarity.'],
     mainImage: '/assets/insights-home.png',
     images: ['/assets/insights-home-full.png', '/assets/insights-affordability.png', '/assets/insights-score.png'],
+    link: true
   },
   {
+    id: 2,
     title: 'IVY',
     role: 'Front-End Developer',
     stack: ['Android Studio', 'Java', 'NodeJS'],
@@ -99,6 +103,7 @@ export const PROJECTS = [
     linkTitle: 'View Repository'
   },
   {
+    id: 3,
     title: 'Plantpedia',
     role: 'Personal Project',
     stack: ['Android Studio', 'Java', 'AdobeXD', 'Firebase Authentication', 'Firebase Realtime Database'],
