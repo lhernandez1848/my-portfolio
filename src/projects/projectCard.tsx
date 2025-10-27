@@ -5,6 +5,7 @@ import Modal from "../components/Modal";
 interface ProjectContentProps {
   data: 
   {
+    id: number,
     title: string,
     role: string,
     stack: Array<string>,
@@ -12,7 +13,7 @@ interface ProjectContentProps {
     description: Array<string>,
     mainImage: string,
     images: Array<string>,
-    link?: string,
+    link?: Boolean | string,
     linkTitle?: string
   }
 }
