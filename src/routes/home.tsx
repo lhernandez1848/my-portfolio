@@ -9,7 +9,7 @@ import Body from "../components/Body";
 export default function Home() {
   return (
     <Body>
-      <div className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
+      <main className="max-w-4xl min-h-full grow flex items-center flex-wrap mx-auto my-20 lg:my-0">
         {/* Main Col */}
         <div id="profile" className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white dark:bg-black opacity-75 mx-6 lg:mx-0"> 
           <div className="p-4 md:p-12 lg:text-left">
@@ -29,7 +29,7 @@ export default function Home() {
           <img src="/assets/lisdanay.png" className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block dark:hidden" alt="" />
           <img src="/assets/lisdanay-dk.png" className="rounded-none lg:rounded-lg shadow-2xl hidden dark:lg:block" alt="" /> 
         </div>
-      </div>
+      </main>
     </Body>
   )
 }

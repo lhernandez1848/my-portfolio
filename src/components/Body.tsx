@@ -17,7 +17,7 @@ export default function Body({ children }: { children: React.ReactNode }) {
   }, [])
 
   return (
-    <body data-theme={isDark ? 'dark' : 'light'} className="h-full font-sans text-gray-900 bg-no-repeat bg-fixed">
+    <body data-theme={isDark ? 'dark' : 'light'} className="min-h-full flex flex-col font-sans text-gray-900 bg-no-repeat bg-fixed">
       <Navbar isDark={isDark} handleChange={handleChange} />
       {children}
     </body>

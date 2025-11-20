@@ -82,36 +82,38 @@ export const PROJECTS = [
     id: 1,
     title: 'Insights',
     role: 'Front-End Developer',
-    stack: ['React', 'Redux', 'Auth0'],
-    shortDescription: 'Insights is a data-driven analytics and credit scoring engine that provides predictive insights into customer’s financial standing',
+    stack: ['React', 'Redux', 'JavaScript', 'Auth0'],
+    lastWorkedOn: 'May 16, 2023',
     description: ['Insights is a data-driven analytics and credit scoring platform that delivers predictive insights into customers’ financial health. I developed the web app from the ground up using React, Redux, and Chart.js, integrating secure user authentication and dynamic data visualizations. The platform empowers users to make informed financial decisions through intuitive dashboards and comprehensive credit scoring tools.'],
-    descriptionLong: ['Insights is a data analytics and credit scoring engine designed to help businesses evaluate customer financial standing through predictive insights. As the sole Frontend Developer, I built the application from scratch, collaborating closely with the Design team to shape both the UI and user experience.', 'The frontend was developed with React and JavaScript, with Redux handling state management and API integrations. I implemented Auth0 for secure authentication and used Chart.js and TanStack Table to build rich, interactive visualizations. Beyond development, I also contributed to the design system by creating several of the custom icons used throughout the interface.', 'This project highlights my ability to design and engineer scalable, data-focused web applications from the ground up—balancing performance, usability, and visual clarity.'],
+    descriptionLong: ['Insights is a data analytics and credit scoring engine designed to help businesses evaluate customer financial standing through predictive insights. As the sole Frontend Developer, I built the application from scratch, collaborating closely with the Design team to shape both the UI and user experience.', 'The frontend was developed with React and JavaScript, with Redux handling state management and API integrations. I implemented Auth0 for secure authentication and used Chart.js and TanStack Table to build rich, interactive visualizations. Beyond development, I also contributed to the design system by creating several of the custom icons used throughout the interface.', 'The result is a robust platform that enables users to easily access and interpret complex financial data, facilitating better decision-making and risk assessment. My work on this project highlights my ability to deliver end-to-end solutions that combine technical proficiency with user-centric design.'],
     mainImage: '/assets/insights-home.png',
+    mainImageAlt: 'Insights Home Page Screenshot',
+    mainImageCaption: 'Figure 1: Home page screenshot',
     images: ['/assets/insights-home-full.png', '/assets/insights-affordability.png', '/assets/insights-score.png'],
-    link: true
+    link: '/project/1',
+    linkTitle: 'Read More'
   },
   {
     id: 2,
+    title: 'Plant Cat',
+    role: 'Personal Project',
+    stack: ['Next.js', 'Tailwind CSS', 'TypeScript'],
+    description: ['Plant Cat is a plant catalog and care guide that helps users learn how to take better care of their plants. Built with Next.js, Tailwind CSS, and TypeScript, it pulls data from the Perenual API to display detailed plant info in a clean, user-friendly interface.'],
+    descriptionLong:['Plant Cat is a personal project I built to combine my love of plants with my passion for web development. It’s a plant catalog and care app that lets users browse and categorize plants, view care instructions, and learn more about what each species needs to thrive.', 'I developed the app solo using Next.js, TypeScript, and Tailwind CSS for a fast, responsive frontend. The data comes from the Perenual API, which provides plant details like watering frequency, sunlight requirements, and growth habits. I focused on building a clean and intuitive layout that makes exploring plants feel effortless and enjoyable.', 'This project was a great opportunity to dive deeper into API integration and responsive UI design — and to create something both functional and a fun. 🌱'],
+    mainImage: '/assets/plant-home.png',
+    images: ['/assets/plant-home-full.png', '/assets/plant-detail.png', '/assets/plant-indoor-list.png', '/assets/plant-species.png'],
+    link: 'https://plantcat.vercel.app/',
+    linkTitle: 'View Website'
+  },
+  {
+    id: 3,
     title: 'IVY',
     role: 'Front-End Developer',
     stack: ['Android Studio', 'Java', 'NodeJS'],
-    shortDescription: 'IVY is a mobile application that provides main inventory functions',
     description: ['IVY is a mobile application that provides main inventory functions. This app was developed as part of the Capstone graduation project. Our team of three was asked to make this project for the client company, Huex Inc.'],
     mainImage: '/assets/ivy-group.png',
     images: ['/assets/ivy-login.png', '/assets/ivy-product-result.png', '/assets/ivy-value.png', '/assets/ivy-pie.png'],
     link: 'https://github.com/lhernandez1848/Capstone',
-    linkTitle: 'View Repository'
-  },
-  {
-    id: 3,
-    title: 'Plantpedia',
-    role: 'Personal Project',
-    stack: ['Android Studio', 'Java', 'AdobeXD', 'Firebase Authentication', 'Firebase Realtime Database'],
-    shortDescription: '',
-    description: ['Developed for Android OS using Java, this mobile app is designed to help the user catalog and care for their houseplants. Each user can keep track of which plants they own and their specific needs. The app will send daily notifications to remind the user of which specific plants need to be watered that day.'],
-    mainImage: '/assets/pl-group.png',
-    images: ['/assets/pl-home.png', '/assets/pl-add.png', '/assets/pl-rec.png'],
-    link: 'https://github.com/lhernandez1848/Plantpedia',
     linkTitle: 'View Repository'
   }
 ]

@@ -1,14 +1,11 @@
 import { useLocation } from "react-router"
 import Toggle from "./Toggle"
 import { useState } from "react"
+import { filterClassnames } from "../lib/utils"
 
 type NavProps = {
   handleChange: () => void,
   isDark: boolean
-}
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
 }
 
 export default function Navbar({ handleChange, isDark }: NavProps) {
@@ -26,14 +23,14 @@ export default function Navbar({ handleChange, isDark }: NavProps) {
       <a
       href={item.href}
       aria-current={item.current ? 'page' : undefined}
-      className={classNames(
+      className={filterClassnames(
         item.current ? 'text-white bg-cyan-800 sm:bg-transparent sm:text-cyan-800 sm:p-0 sm:dark:text-cyan-500' : 'hover:bg-gray-100 sm:hover:bg-transparent sm:hover:text-cyan-800 sm:p-0 sm:dark:hover:text-cyan-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white sm:dark:hover:bg-transparent dark:border-gray-700', 'text-gray-900 rounded-sm',
       )}>{item.name}</a>
     </li>
   ))
 
   return (
-    <nav className="bg-white dark:bg-gray-950 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <nav className="bg-white dark:bg-gray-950 w-full border-b border-gray-200 dark:border-gray-600">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
