@@ -9,11 +9,10 @@ interface ProjectContentProps {
     title: string,
     role: string,
     stack: Array<string>,
-    shortDescription: string,
     description: Array<string>,
     mainImage: string,
     images: Array<string>,
-    link?: Boolean | string,
+    link?: string,
     linkTitle?: string
   }
 }
@@ -35,15 +34,18 @@ export default function ProjectCard({ data }: ProjectContentProps ) {
           />
         </div>
         <div className="p-6">
-          <h4 className="mb-2 text-slate-800 text-xl font-semibold dark:text-gray-200">
+          <h4 className="mb-2 text-gray-900 text-xl font-semibold dark:text-gray-200">
             {data.title}
           </h4>
-          <p className="mb-8 text-slate-600 leading-normal font-light dark:text-gray-200">{data.description}</p>
+          <p className="mb-8 text-gray-900 leading-normal font-light dark:text-gray-200">{data.description}</p>
           <div className="flex flex-wrap gap-2">
           {data.stack.map((item, y) => (
-            <div key={y} className="mb-4 rounded-full bg-cyan-600 py-0.5 px-2.5 border border-transparent text-xs text-white transition-all shadow-sm w-auto text-center">{item}</div>
+            <div key={y} className="mb-4 rounded-full bg-cyan-600 py-0.5 px-2.5 border border-transparent text-xs text-white transition-all shadow-sm w-auto text-center dark:bg-cyan-800">{item}</div>
           ))}
           </div>
+          {data.link &&
+            <a href={data.link} className="text-cyan-900 hover:text-cyan-600 dark:text-cyan-600 dark:hover:text-cyan-400">{data.linkTitle}</a>
+          }
         </div>
       </div>
     </>

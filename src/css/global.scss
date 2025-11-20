@@ -2,6 +2,16 @@ button {
   cursor: pointer;
 }
 
+html{
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
 body {
   background-image: var(--background);
 }
